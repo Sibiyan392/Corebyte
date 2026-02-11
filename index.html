@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+  <!-- PROFESSIONAL IDENTITY · CORE BYTE SOLUTIONS · GLOBAL -->
+  <meta name="description" content="Core Byte Solutions – websites, booking systems, hosting & fixes. 10+ projects delivered. Firebase/auth, CV writing, LinkedIn. Remote developer serving USA, UK, Europe, Africa.">
+  <meta name="keywords" content="Core Byte Solutions, freelance web developer, remote developer, booking system, salon booking, Firebase expert, CV writer, LinkedIn profile, website fix, hosting services, Johannesburg developer, remote web developer, affordable websites USA, affordable websites UK, independent developer, global web developer, USD pricing web developer">
+  <meta name="author" content="Nompumelelo Sibiya - Core Byte Solutions">
+  <meta property="og:title" content="Core Byte Solutions · digital studio">
+  <meta property="og:description" content="Websites, systems & hosting. 10+ projects. Clear process, transparent pricing in USD/ZAR.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://corebytesolutions.site">
+  <meta property="og:image" content="https://corebytesolutions.site/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://corebytesolutions.site">
+  
+  <title>Core Byte Solutions · digital studio by Nompumelelo Sibiya</title>
+  
+  <!-- Inter font – clean, formal -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <style>
+    /* ---------- MINIMAL · FORMAL · NO GIMMICKS ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #FFFFFF;
+      color: #1C1D21;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    @media (max-width: 768px) {
+      .container { padding: 0 28px; }
+    }
+
+    /* ---------- TYPOGRAPHY · QUIET AUTHORITY ---------- */
+    h1, h2, h3, .heading {
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #0A0C10;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      line-height: 1.1;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: #1E1F25;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .subhead {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: #4A4E62;
+      max-width: 660px;
+    }
+
+    /* ---------- SUBTLE REFINEMENT ---------- */
+    .badge {
+      display: inline-block;
+      background: #F0F2F6;
+      color: #2C2F3A;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      border: 1px solid #E2E6EC;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #E8ECF0;
+      margin: 2.8rem 0;
+    }
+
+    /* ---------- HEADER · HERO ---------- */
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 2.5rem 0 1.5rem;
+      border-bottom: 1px solid #E9ECF0;
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 1.6rem;
+      letter-spacing: -0.02em;
+      color: #0B1C2F;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .brand-small {
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: #4F6F8F;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .contact-header {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .contact-link {
+      text-decoration: none;
+      color: #3E4557;
+      font-weight: 500;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    .contact-link:hover {
+      border-bottom-color: #7C8C9E;
+    }
+
+    /* ---------- HERO GRID ---------- */
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      padding: 3.5rem 0 2rem;
+      align-items: end;
+    }
+
+    @media (max-width: 800px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+
+    .hero-title {
+      margin-bottom: 1.8rem;
+    }
+
+    .stat-list {
+      display: flex;
+      gap: 2.2rem;
+      margin-top: 2rem;
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stat-num {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #0A1C2F;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #68707F;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    /* ---------- CONTACT CARD ---------- */
+    .contact-card {
+      background: #F8FAFE;
+      border: 1px solid #E4E9F2;
+      border-radius: 20px;
+      padding: 2rem 2.2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.01);
+    }
+
+    .contact-card p {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #1E2532;
+      margin-bottom: 1rem;
+    }
+
+    .contact-icon {
+      color: #4F6F8F;
+      width: 24px;
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.2s;
+      border: 1.5px solid transparent;
+    }
+
+    .btn-primary {
+      background: #1C2A3A;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #2E3E52;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border-color: #C8D0DA;
+      color: #1F2A36;
+    }
+
+    .btn-outline:hover {
+      border-color: #7F8C9A;
+      background: #F5F7FA;
+    }
+
+    /* ---------- PROCESS STEPS · UPDATED WITH MEET OPTIONS ---------- */
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+      margin: 2.5rem 0;
+    }
+    
+    .step-item {
+      background: #FFFFFF;
+      border: 1px solid #EDF1F7;
+      border-radius: 20px;
+      padding: 1.8rem 1.5rem;
+      position: relative;
+    }
+    
+    .step-number {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #4F6F8F;
+      background: #ECF2F9;
+      display: inline-block;
+      padding: 0.2rem 0.8rem;
+      border-radius: 40px;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    
+    .step-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+      color: #0D1C2C;
+    }
+    
+    .step-desc {
+      font-size: 0.9rem;
+      color: #4E586A;
+    }
+    
+    .meet-icons {
+      display: flex;
+      gap: 0.8rem;
+      margin-top: 1rem;
+      color: #4F6F8F;
+      font-size: 0.85rem;
+      align-items: center;
+    }
+
+    /* ---------- SERVICE GRID · 6 SERVICES · DUAL PRICING ---------- */
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin: 2.5rem 0 1.5rem;
+    }
+
+    .service-item {
+      background: #FFFFFF;
+      border: 1px solid #EDF1F7;
+      border-radius: 20px;
+      padding: 2rem 1.6rem 1.8rem;
+      transition: border 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-item:hover {
+      border-color: #B2C2D4;
+      box-shadow: 0 14px 24px -12px rgba(26, 38, 52, 0.08);
+    }
+
+    .service-icon {
+      font-size: 2rem;
+      color: #3E566B;
+      margin-bottom: 1.4rem;
+    }
+
+    .service-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.7rem;
+      color: #0D1C2C;
+    }
+
+    .service-desc {
+      font-size: 0.9rem;
+      color: #4E586A;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+      flex: 1;
+    }
+
+    .service-meta {
+      font-weight: 600;
+      color: #1E3B5C;
+      font-size: 0.9rem;
+      border-top: 1px solid #EDF1F7;
+      padding-top: 1.2rem;
+      margin-top: 0.4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.3rem;
+    }
+    
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .price-usd {
+      font-weight: 700;
+      color: #0A1C2F;
+    }
+    
+    .price-zar {
+      font-size: 0.8rem;
+      color: #68707F;
+      font-weight: 500;
+    }
+
+    .pill-tag {
+      background: #ECF8F0;
+      padding: 0.2rem 0.8rem;
+      border-radius: 60px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #1F6C4D;
+      text-transform: uppercase;
+    }
+    
+    .timeline-tag {
+      background: #EDF2F7;
+      padding: 0.2rem 0.8rem;
+      border-radius: 60px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #38505F;
+    }
+
+    /* ---------- FEATURE BLOCK (FIREBASE / AUTH) ---------- */
+    .feature-block {
+      background: #F1F5F9;
+      border-radius: 24px;
+      padding: 3rem 3rem;
+      margin: 3rem 0 3.5rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    @media (max-width: 700px) {
+      .feature-block { grid-template-columns: 1fr; }
+    }
+
+    .feature-block h2 {
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .feature-tag {
+      background: #FFFFFF;
+      border-radius: 100px;
+      padding: 0.4rem 1.2rem;
+      font-weight: 600;
+      font-size: 0.8rem;
+      color: #1C2A3A;
+      border: 1px solid #CDD8E3;
+      display: inline-block;
+    }
+
+    .tech-pill {
+      background: white;
+      border-radius: 60px;
+      padding: 0.3rem 1.4rem;
+      border: 1px solid #B8C6D4;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* ---------- CONTACT REMINDER ---------- */
+    .contact-reminder {
+      background: #F8FAFE;
+      border-radius: 18px;
+      padding: 1.8rem 2.2rem;
+      margin: 2rem 0 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: #FCFDFE;
+      border-top: 1px solid #E3E9F0;
+      padding: 3.8rem 0 2.5rem;
+      margin-top: 3.5rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.8fr 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    @media (max-width: 800px) {
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+
+    .footer-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #111C28;
+      margin-bottom: 0.3rem;
+    }
+    
+    .footer-studio {
+      font-size: 0.85rem;
+      color: #4F6F8F;
+      margin-bottom: 0.8rem;
+      font-weight: 500;
+    }
+
+    .footer-email, .footer-phone {
+      color: #445566;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-top: 0.4rem;
+      font-weight: 450;
+    }
+
+    .footer-small {
+      font-size: 0.85rem;
+      color: #6F7C8A;
+      margin-top: 1.2rem;
+    }
+
+    /* ---------- TOAST / COPY ---------- */
+    .copy-feedback {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      background: #1F2C38;
+      color: white;
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s, visibility 0.2s;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.02);
+      border: 1px solid rgba(255,255,255,0.1);
+      z-index: 999;
+    }
+
+    .copy-feedback.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* ---------- LEGAL LINKS ---------- */
+    .legal-links {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 0.8rem;
+    }
+    
+    .legal-link {
+      color: #5B6F7E;
+      font-size: 0.8rem;
+      text-decoration: underline;
+      text-decoration-color: #CBD5E0;
+      text-underline-offset: 4px;
+    }
+    
+    .legal-link:hover {
+      color: #1C2A3A;
+    }
+    
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    
+    .modal.active {
+      display: flex;
+    }
+    
+    .modal-content {
+      background: white;
+      border-radius: 24px;
+      max-width: 800px;
+      max-height: 80vh;
+      overflow-y: auto;
+      padding: 2.5rem;
+      position: relative;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+    
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #6F7C8A;
+    }
+    
+    /* Currency selector */
+    .currency-toggle {
+      display: inline-flex;
+      background: white;
+      border: 1px solid #DCE3EB;
+      border-radius: 40px;
+      padding: 0.2rem;
+    }
+    
+    .currency-option {
+      padding: 0.3rem 0.9rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      border-radius: 40px;
+      cursor: pointer;
+    }
+    
+    .currency-option.active {
+      background: #1C2A3A;
+      color: white;
+    }
+    
+    /* ---------- MISC UTILITIES ---------- */
+    .text-muted { color: #5C6673; }
+    .pointer { cursor: pointer; }
+    .mt-2 { margin-top: 2rem; }
+    .mb-1 { margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+
+<!-- COPY TOAST NOTIFICATION -->
+<div id="copyToast" class="copy-feedback">
+  <i class="fas fa-check-circle" style="margin-right: 8px; opacity: 0.8;"></i> copied to clipboard
+</div>
+
+<!-- PRIVACY POLICY MODAL -->
+<div id="privacyModal" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" id="closePrivacyModal">&times;</span>
+    <h2 style="margin-bottom: 1.5rem;">Privacy Policy</h2>
+    <div style="color: #2C3E50; font-size: 0.95rem; line-height: 1.6;">
+      <p><strong>Core Byte Solutions</strong> respects your privacy.</p>
+      <p style="margin-top: 1rem;"><strong>Data collection</strong><br>This site uses Google Analytics to understand visitor behavior and improve services. Google Analytics collects anonymized data such as pages visited, time on site, and browser type. No personally identifiable information is collected via analytics.</p>
+      <p style="margin-top: 1rem;"><strong>Contact information</strong><br>When you email or WhatsApp me, your contact details are used solely to respond to your inquiry. I never share or sell your information.</p>
+      <p style="margin-top: 1rem;"><strong>Cookies</strong><br>This site does not set tracking cookies beyond Google Analytics. You can disable cookies in your browser settings.</p>
+      <p style="margin-top: 1rem;"><strong>Service delivery</strong><br>All services are delivered personally. Client confidentiality is maintained at all times.</p>
+      <p style="margin-top: 1.5rem;"><i class="fas fa-shield-alt" style="color: #4F6F8F;"></i> Last updated: February 2025</p>
+    </div>
+  </div>
+</div>
+
+<!-- TERMS MODAL -->
+<div id="termsModal" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" id="closeTermsModal">&times;</span>
+    <h2 style="margin-bottom: 1.5rem;">Terms of Service</h2>
+    <div style="color: #2C3E50; font-size: 0.95rem; line-height: 1.6;">
+      <p><strong>Core Byte Solutions – Terms</strong></p>
+      <p style="margin-top: 1rem;"><strong>1. Services</strong><br>I provide web development, booking systems, CV/LinkedIn services, Firebase/auth integration, hosting, and website fixes. Each project is individually scoped with a written agreement.</p>
+      <p style="margin-top: 1rem;"><strong>2. Timeline</strong><br>Standard website delivery is 1-2 weeks from approval of domain/content. Complex projects are scoped accordingly. Hosting setup takes 24–48 hours.</p>
+      <p style="margin-top: 1rem;"><strong>3. Payments</strong><br>50% deposit required to begin work, 50% on completion. Payments accepted in USD or ZAR via EFT, SnapScan, PayPal, or international wire.</p>
+      <p style="margin-top: 1rem;"><strong>4. Hosting</strong><br>Monthly/yearly hosting includes updates, security monitoring, and backups. Cancellation with 14 days notice. You own your site files at all times.</p>
+      <p style="margin-top: 1rem;"><strong>5. Revisions</strong><br>Two rounds of revisions included. Additional changes billed at $20/hr or R350/hr.</p>
+      <p style="margin-top: 1.5rem;"><i class="fas fa-gavel" style="color: #4F6F8F;"></i> Johannesburg, South Africa – serving clients worldwide</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- HEADER: Core Byte Solutions + name + email + phone -->
+  <div class="header-row">
+    <span class="brand">
+      Core Byte Solutions
+      <span class="brand-small">by Nompumelelo Sibiya · global</span>
+    </span>
+    <div class="contact-header">
+      <a href="mailto:corebytesolutions.site" class="contact-link" id="headerEmailLink">
+        <i class="fas fa-envelope"></i> corebytesolutions.site
+      </a>
+      <a href="https://wa.me/27724728166" class="contact-link" id="headerWALink" target="_blank">
+        <i class="fab fa-whatsapp"></i> +27 72 472 8166
+      </a>
+      <a href="tel:+27724728166" class="contact-link" id="headerCallLink">
+        <i class="fas fa-phone"></i> call
+      </a>
+    </div>
+  </div>
+
+  <!-- HERO · calm, direct, formal -->
+  <div class="hero-grid">
+    <div class="hero-title">
+      <div class="badge" style="margin-bottom: 1.4rem;">CORE BYTE SOLUTIONS · REMOTE · USA · UK · EU · AFRICA</div>
+      <h1>Websites, booking systems<br>& hosting that actually work.</h1>
+      <div class="subhead" style="margin-top: 1.2rem;">
+        I build, fix and maintain digital platforms. 10+ projects completed.<br>Clear process, no jargon, full ownership. Pricing in USD/ZAR.
+      </div>
+      <div class="stat-list">
+        <div class="stat-item">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">projects</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">1-2 wks</span>
+          <span class="stat-label">avg. delivery</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">24/7</span>
+          <span class="stat-label">hosting support</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT CARD · professional summary -->
+    <div class="contact-card">
+      <p><i class="fas fa-code contact-icon"></i> Core Byte Solutions</p>
+      <p style="cursor: pointer;" id="contactCardEmail"><i class="fas fa-envelope contact-icon"></i> corebytesolutions.site</p>
+      <p style="cursor: pointer;" id="contactCardPhone"><i class="fab fa-whatsapp contact-icon"></i> +27 72 472 8166</p>
+      <p style="cursor: pointer;" id="contactCardCall"><i class="fas fa-phone contact-icon"></i> +27 72 472 8166 (calls)</p>
+      <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+        <a href="mailto:corebytesolutions.site" class="btn btn-primary" style="flex:1;" id="heroEmailBtn">
+          <i class="fas fa-paper-plane"></i> Email
+        </a>
+        <a href="https://wa.me/27724728166?text=Hello%20Nompumelelo,%20I'm%20interested%20in%20a%20website%20or%20booking%20system." target="_blank" class="btn btn-outline" style="flex:1;">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+      <p style="font-size: 0.75rem; margin-top: 1.2rem; color: #5D6C7C;">
+        <i class="fas fa-bolt" style="opacity: 0.7;"></i> Response within 2 hours · calls & WhatsApp · USD/ZAR
+      </p>
+    </div>
+  </div>
+
+  <!-- PROCESS SECTION: How it works – updated with Google Meet/Teams -->
+  <div style="margin-top: 3.5rem;">
+    <div style="display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap;">
+      <h2>How a website happens</h2>
+      <span class="badge" style="background: white; border: 1px solid #D3DCE6;">1-2 week delivery · realistic timeline</span>
+    </div>
+    <hr>
+  </div>
+  
+  <div class="process-steps">
+    <div class="step-item">
+      <span class="step-number">step 01</span>
+      <div class="step-title">Free consultation</div>
+      <div class="step-desc">20‑min Google Meet or Teams call. We discuss goals, audience, features. No pressure, no obligation.</div>
+      <div class="meet-icons">
+        <i class="fab fa-google"></i> Meet
+        <i class="fab fa-microsoft" style="margin-left: 0.5rem;"></i> Teams
+      </div>
+    </div>
+    <div class="step-item">
+      <span class="step-number">step 02</span>
+      <div class="step-title">Name & domain</div>
+      <div class="step-desc">I help you choose a domain, check availability, and set it up. You own it completely.</div>
+    </div>
+    <div class="step-item">
+      <span class="step-number">step 03</span>
+      <div class="step-title">Development</div>
+      <div class="step-desc">I build your site over 1-2 weeks. You get progress updates and a private preview link.</div>
+    </div>
+    <div class="step-item">
+      <span class="step-number">step 04</span>
+      <div class="step-title">Review & refine</div>
+      <div class="step-desc">You review, I tweak. Two rounds of changes included. No rushed decisions.</div>
+    </div>
+    <div class="step-item">
+      <span class="step-number">step 05</span>
+      <div class="step-title">Launch & host</div>
+      <div class="step-desc">Site goes live. I handle hosting setup or migrate to your existing host.</div>
+    </div>
+  </div>
+
+  <!-- SERVICES TITLE & BADGE -->
+  <div style="margin-top: 2.8rem;">
+    <div style="display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap;">
+      <h2>Services – fixed scope, dual pricing</h2>
+      <span class="badge" style="background: white; border: 1px solid #D3DCE6;">USD · ZAR · global clients</span>
+    </div>
+    <hr>
+  </div>
+  
+  <!-- 6 SERVICE GRID · DUAL PRICING USD/ZAR · 1-2 WEEK TIMELINES -->
+  <div class="service-grid">
+    
+    <!-- 1. Website setup · 1-2 weeks -->
+    <div class="service-item">
+      <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+      <div class="service-title">Website setup</div>
+      <div class="service-desc">Professional small business website. Copy, design, hosting connection, domain help. Full ownership.</div>
+      <div class="service-meta">
+        <div class="price-row">
+          <span class="price-usd">$165 USD</span>
+          <span class="timeline-tag">1-2 weeks</span>
+        </div>
+        <div class="price-zar">R2,999 ZAR</div>
+      </div>
+    </div>
+    
+    <!-- 2. Fix / improve existing sites -->
+    <div class="service-item">
+      <div class="service-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+      <div class="service-title">Fix & improve</div>
+      <div class="service-desc">Performance, mobile layout, broken forms, hosting migration, security updates. Diagnosis included.</div>
+      <div class="service-meta">
+        <div class="price-row">
+          <span class="price-usd">$70 USD</span>
+          <span class="timeline-tag">3-5 days</span>
+        </div>
+        <div class="price-zar">R1,290 ZAR</div>
+      </div>
+    </div>
+    
+    <!-- 3. Student CV & LinkedIn setup -->
+    <div class="service-item">
+      <div class="service-icon"><i class="fas fa-file-user"></i></div>
+      <div class="service-title">CV + LinkedIn</div>
+      <div class="service-desc">ATS‑friendly CV, LinkedIn headline, summary, banner, keywords. For graduates and professionals.</div>
+      <div class="service-meta">
+        <div class="price-row">
+          <span class="price-usd">$35 USD</span>
+          <span class="timeline-tag">2-3 days</span>
+        </div>
+        <div class="price-zar">R650 ZAR</div>
+      </div>
+    </div>
+    
+    <!-- 4. Online booking systems for salons -->
+    <div class="service-item">
+      <div class="service-icon"><i class="fas fa-calendar-check"></i></div>
+      <div class="service-title">Salon booking systems</div>
+      <div class="service-desc">Tailored scheduling, calendar sync, automated reminders, deposits. Custom branded.</div>
+      <div class="service-meta">
+        <div class="price-row">
+          <span class="price-usd">$275-$550 USD</span>
+          <span class="timeline-tag">1-2 weeks</span>
+        </div>
+        <div class="price-zar">R5,000-R10,000 ZAR</div>
+      </div>
+    </div>
+    
+    <!-- 5. Firebase / authentication setup for devs -->
+    <div class="service-item">
+      <div class="service-icon"><i class="fas fa-fire"></i><i class="fas fa-lock" style="margin-left: 8px;"></i></div>
+      <div class="service-title">Firebase/auth for devs</div>
+      <div class="service-desc">Authentication, Firestore rules, social login, secure backend. Documented, 48h setup.</div>
+      <div class="service-meta">
+        <div class="price-row">
+          <span class="price-usd">$110 USD</span>
+          <span class="timeline-tag">2-3 days</span>
+        </div>
+        <div class="price-zar">R1,990 ZAR</div>
+      </div>
+    </div>
+    
+    <!-- 6. Hosting & Maintenance -->
+    <div class="service-item">
+      <div class="service-icon"><i class="fas fa-server"></i></div>
+      <div class="service-title">Hosting + maintenance</div>
+      <div class="service-desc">Fast, secure hosting. Weekly backups, uptime monitoring, plugin/security updates. You focus on business.</div>
+      <div class="service-meta">
+        <div class="price-row">
+          <span class="price-usd">$11 USD / mo</span>
+          <span class="timeline-tag">24/7 monitoring</span>
+        </div>
+        <div class="price-zar">R199 ZAR / mo</div>
+        <div style="font-size: 0.8rem; color: #1E3B5C; margin-top: 0.2rem;">$110 USD / R1,990 ZAR yearly</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPECIALISED FIREBASE / AUTH BLOCK – premium -->
+  <div class="feature-block">
+    <div>
+      <span class="feature-tag"><i class="fas fa-code-branch"></i> specialised · Firebase & Auth</span>
+      <h2 style="margin-top: 1rem; font-size: 2rem;">For developers and startups</h2>
+      <p style="font-size: 1.1rem; color: #2A3A4C; margin: 1rem 0 1.5rem; font-weight: 400;">
+        You focus on the frontend. I implement secure Firebase authentication, Firestore security rules, and social login — clean, documented, and scalable. Used in 5+ projects.
+      </p>
+      <div style="display: flex; gap: 1.2rem; flex-wrap: wrap;">
+        <span class="tech-pill"><i class="fas fa-check-circle" style="color: #2A6B4E;"></i> 48h delivery</span>
+        <span class="tech-pill"><i class="fas fa-check-circle" style="color: #2A6B4E;"></i> Google, email, social</span>
+        <span class="tech-pill"><i class="fas fa-globe"></i> USA · UK · EU</span>
+      </div>
+    </div>
+    <div style="background: white; border-radius: 20px; padding: 1.8rem; border: 1px solid #DCE3EB;">
+      <p style="font-weight: 700; margin-bottom: 0.5rem; font-size: 1.2rem;">$110 USD / R1,990 ZAR</p>
+      <p style="color: #3B5162; margin-bottom: 1.2rem;">Firebase auth setup, Firestore rules, hosting config. Flat rate.</p>
+      <a href="https://wa.me/27724728166" target="_blank" style="text-decoration: none; color: #1C2A3A; font-weight: 600;">enquire <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- CONTACT REMINDER – name + channels + response time -->
+  <div class="contact-reminder">
+    <div>
+      <span style="font-weight: 700; font-size: 1.1rem;">Core Byte Solutions</span>
+      <span style="margin-left: 1rem; color: #4F6072;"><i class="fas fa-envelope"></i> corebytesolutions.site</span>
+      <span style="margin-left: 1.5rem; color: #4F6072;"><i class="fab fa-whatsapp"></i> +27 72 472 8166</span>
+      <span style="margin-left: 1.5rem; color: #4F6072;"><i class="fas fa-phone"></i> calls & WhatsApp</span>
+    </div>
+    <div>
+      <span class="badge" style="background: white;">response &lt;2h · USD/ZAR</span>
+    </div>
+  </div>
+</div> <!-- end container -->
+
+<!-- FOOTER : calm, professional, detailed -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-name">Core Byte Solutions</div>
+        <div class="footer-studio">by Nompumelelo Sibiya · global digital studio</div>
+        <a href="mailto:corebytesolutions.site" class="footer-email" id="footerEmail"><i class="fas fa-envelope"></i> corebytesolutions.site</a>
+        <a href="https://wa.me/27724728166" class="footer-phone" id="footerPhone" target="_blank"><i class="fab fa-whatsapp"></i> +27 72 472 8166</a>
+        <a href="tel:+27724728166" class="footer-phone" id="footerCall" style="margin-top: 0.2rem;"><i class="fas fa-phone"></i> +27 72 472 8166 (calls)</a>
+        <div class="footer-small">
+          <i class="fas fa-bolt"></i> 1-2 week delivery · hosting from $11/mo · R199/mo
+        </div>
+      </div>
+      <div>
+        <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1.2rem; color: #1B2A38;">Services</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li style="margin-bottom: 0.5rem; color: #3D576B;">Website setup · 1-2 weeks</li>
+          <li style="margin-bottom: 0.5rem; color: #3D576B;">Fix speed / mobile / forms</li>
+          <li style="margin-bottom: 0.5rem; color: #3D576B;">CV + LinkedIn</li>
+          <li style="margin-bottom: 0.5rem; color: #3D576B;">Salon booking systems</li>
+          <li style="margin-bottom: 0.5rem; color: #3D576B;">Firebase/auth for devs</li>
+          <li style="margin-bottom: 0.5rem; color: #3D576B;">Hosting & maintenance</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1.2rem; color: #1B2A38;">Connect</h4>
+        <p style="margin-bottom: 0.5rem; color: #3D576B;">
+          <i class="fas fa-check-circle" style="color: #57758C;"></i> corebytesolutions.site
+        </p>
+        <p style="margin-bottom: 0.5rem; color: #3D576B;">
+          <i class="fab fa-whatsapp"></i> +27 72 472 8166
+        </p>
+        <p style="margin-bottom: 0.5rem; color: #3D576B;">
+          <i class="fas fa-phone"></i> +27 72 472 8166
+        </p>
+        <div class="legal-links">
+          <a href="#" id="privacyLink" class="legal-link">Privacy</a>
+          <a href="#" id="termsLink" class="legal-link">Terms</a>
+        </div>
+        <p style="margin-top: 1.2rem; font-size: 0.85rem; color: #657A8A;">
+          Based in Johannesburg · remote worldwide · USD/ZAR
+        </p>
+      </div>
+    </div>
+    <div style="border-top: 1px solid #E1E8EF; margin-top: 2.5rem; padding-top: 1.8rem; display: flex; justify-content: space-between; flex-wrap: wrap;">
+      <span style="color: #5B6F7E; font-size: 0.85rem;">© 2025 Core Byte Solutions – independent digital studio</span>
+      <span style="color: #5B6F7E; font-size: 0.85rem;">corebytesolutions.site · +27 72 472 8166</span>
+    </div>
+  </div>
+</footer>
+
+<!-- JAVASCRIPT · copy feedback, modal control, analytics placeholder -->
+<script>
+  (function() {
+    "use strict";
+
+    const toast = document.getElementById('copyToast');
+    
+    function showCopyMessage(text = 'copied') {
+      if (!toast) return;
+      toast.innerHTML = `<i class="fas fa-check-circle" style="margin-right: 8px; opacity: 0.9;"></i> ${text} copied`;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2200);
+    }
+
+    // Updated contact details
+    const emailAddress = 'corebytesolutions.site';
+    const phoneNumber = '+27724728166';
+
+    function setupEmailCopy(element) {
+      if (!element) return;
+      element.addEventListener('click', function(e) {
+        const href = this.href || '';
+        if (href.includes('mailto:')) {
+          e.preventDefault();
+          navigator.clipboard.writeText(emailAddress).then(() => {
+            showCopyMessage('email');
+            if (this.id !== 'heroEmailBtn' && !this.classList.contains('btn')) {
+              window.location.href = href;
+            } else {
+              window.location.href = `mailto:${emailAddress}`;
+            }
+          }).catch(() => {});
+        }
+      });
+    }
+
+    document.querySelectorAll('a[href^="mailto:"]').forEach(setupEmailCopy);
+
+    function setupWACopy(element) {
+      if (!element) return;
+      element.addEventListener('click', function(e) {
+        e.preventDefault();
+        navigator.clipboard.writeText(phoneNumber).then(() => {
+          showCopyMessage('WhatsApp number');
+          window.open('https://wa.me/27724728166?text=Hello%20Nompumelelo,%20I\'m%20interested%20in%20a%20website%20or%20booking%20system.', '_blank');
+        }).catch(() => {});
+      });
+    }
+
+    document.querySelectorAll('a[href*="wa.me"]').forEach(setupWACopy);
+    
+    // Setup call link copy
+    function setupCallCopy(element) {
+      if (!element) return;
+      element.addEventListener('click', function(e) {
+        e.preventDefault();
+        navigator.clipboard.writeText(phoneNumber).then(() => {
+          showCopyMessage('phone number');
+          window.location.href = 'tel:+27724728166';
+        }).catch(() => {});
+      });
+    }
+    
+    document.querySelectorAll('a[href^="tel:"]').forEach(setupCallCopy);
+
+    // Contact card clicks
+    const cardEmail = document.getElementById('contactCardEmail');
+    if (cardEmail) {
+      cardEmail.addEventListener('click', function(e) {
+        e.stopPropagation();
+        navigator.clipboard.writeText(emailAddress).then(() => {
+          showCopyMessage('email');
+          window.location.href = `mailto:${emailAddress}`;
+        });
+      });
+    }
+
+    const cardPhone = document.getElementById('contactCardPhone');
+    if (cardPhone) {
+      cardPhone.addEventListener('click', function(e) {
+        e.stopPropagation();
+        navigator.clipboard.writeText(phoneNumber).then(() => {
+          showCopyMessage('WhatsApp number');
+          window.open('https://wa.me/27724728166?text=Hello%20Nompumelelo,%20I\'m%20interested%20in%20a%20website%20or%20booking%20system.', '_blank');
+        });
+      });
+    }
+    
+    const cardCall = document.getElementById('contactCardCall');
+    if (cardCall) {
+      cardCall.addEventListener('click', function(e) {
+        e.stopPropagation();
+        navigator.clipboard.writeText(phoneNumber).then(() => {
+          showCopyMessage('phone number');
+          window.location.href = 'tel:+27724728166';
+        });
+      });
+    }
+
+    const footerPhone = document.getElementById('footerPhone');
+    if (footerPhone) {
+      footerPhone.addEventListener('click', function(e) {
+        e.preventDefault();
+        navigator.clipboard.writeText(phoneNumber).then(() => {
+          showCopyMessage('WhatsApp');
+          window.open('https://wa.me/27724728166', '_blank');
+        });
+      });
+    }
+    
+    const footerCall = document.getElementById('footerCall');
+    if (footerCall) {
+      footerCall.addEventListener('click', function(e) {
+        e.preventDefault();
+        navigator.clipboard.writeText(phoneNumber).then(() => {
+          showCopyMessage('phone number');
+          window.location.href = 'tel:+27724728166';
+        });
+      });
+    }
+
+    // MODAL CONTROLS - Privacy & Terms
+    const privacyModal = document.getElementById('privacyModal');
+    const termsModal = document.getElementById('termsModal');
+    const privacyLink = document.getElementById('privacyLink');
+    const termsLink = document.getElementById('termsLink');
+    const closePrivacy = document.getElementById('closePrivacyModal');
+    const closeTerms = document.getElementById('closeTermsModal');
+    
+    if (privacyLink && privacyModal) {
+      privacyLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        privacyModal.classList.add('active');
+      });
+    }
+    
+    if (termsLink && termsModal) {
+      termsLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        termsModal.classList.add('active');
+      });
+    }
+    
+    if (closePrivacy && privacyModal) {
+      closePrivacy.addEventListener('click', function() {
+        privacyModal.classList.remove('active');
+      });
+    }
+    
+    if (closeTerms && termsModal) {
+      closeTerms.addEventListener('click', function() {
+        termsModal.classList.remove('active');
+      });
+    }
+    
+    // Close modals when clicking outside
+    window.addEventListener('click', function(e) {
+      if (e.target === privacyModal) {
+        privacyModal.classList.remove('active');
+      }
+      if (e.target === termsModal) {
+        termsModal.classList.remove('active');
+      }
+    });
+    
+  })();
+</script>
+
+<!-- Google Analytics placeholder – replace with your ID -->
+<!-- 
+  Add your Google Analytics code here for global audience tracking.
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+-->
+
+</body>
+</html>
