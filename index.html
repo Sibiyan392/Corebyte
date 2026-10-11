@@ -1,1066 +1,1378 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
-  
-  <!-- PROFESSIONAL IDENTITY · CORE BYTE SOLUTIONS · GLOBAL -->
-  <meta name="description" content="Core Byte Solutions – websites, booking systems, hosting & fixes. 10+ projects delivered. Firebase/auth, CV writing, LinkedIn. Remote developer serving USA, UK, Europe, Africa.">
-  <meta name="keywords" content="Core Byte Solutions, freelance web developer, remote developer, booking system, salon booking, Firebase expert, CV writer, LinkedIn profile, website fix, hosting services, Johannesburg developer, remote web developer, affordable websites USA, affordable websites UK, independent developer, global web developer, USD pricing web developer">
-  <meta name="author" content="Nompumelelo Sibiya - Core Byte Solutions">
-  <meta property="og:title" content="Core Byte Solutions · digital studio">
-  <meta property="og:description" content="Websites, systems & hosting. 10+ projects. Clear process, transparent pricing in USD/ZAR.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://corebytesolutions.site">
-  <meta property="og:image" content="https://corebytesolutions.site/og.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://corebytesolutions.site">
-  
-  <title>Core Byte Solutions · digital studio by Nompumelelo Sibiya</title>
-  
-  <!-- Inter font – clean, formal + fallback -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- Font Awesome 6 (free) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  
-  <style>
-    /* ---------- MODERN PRODUCTION · MINIMAL GLASS · REFINED ---------- */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
 
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      background: #FCFDFE;
-      color: #1A1E24;
-      line-height: 1.5;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .container {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 48px;
-    }
-
-    @media (max-width: 768px) {
-      .container { padding: 0 28px; }
-    }
-
-    /* ---------- TYPOGRAPHY · SHARP & CONFIDENT ---------- */
-    h1, h2, h3, .heading {
-      font-weight: 700;
-      letter-spacing: -0.022em;
-      color: #0C151C;
-    }
-
-    h1 {
-      font-size: 3.6rem;
-      line-height: 1.1;
-      font-weight: 800;
-      margin-bottom: 0.6rem;
-      letter-spacing: -0.03em;
-    }
-
-    h2 {
-      font-size: 2.2rem;
-      font-weight: 650;
-      letter-spacing: -0.018em;
-      color: #1A262E;
-    }
-
-    h3 {
-      font-size: 1.4rem;
-      font-weight: 650;
-      margin-bottom: 0.6rem;
-    }
-
-    .subhead {
-      font-size: 1.25rem;
-      font-weight: 400;
-      color: #3C4F5E;
-      max-width: 680px;
-      line-height: 1.5;
-    }
-
-    /* ---------- BADGE / MICRO ELEMENTS ---------- */
-    .badge {
-      display: inline-block;
-      background: rgba(240, 245, 250, 0.8);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
-      color: #1F3A4F;
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      padding: 0.3rem 1.2rem;
-      border-radius: 60px;
-      border: 1px solid rgba(200, 212, 225, 0.5);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
-    }
-
-    hr {
-      border: none;
-      border-top: 1px solid rgba(220, 230, 240, 0.7);
-      margin: 2.8rem 0;
-    }
-
-    /* ---------- HEADER · ELEVATED ---------- */
-    .header-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 2.5rem 0 1.2rem;
-      border-bottom: 1px solid rgba(225, 235, 245, 0.8);
-    }
-
-    .brand {
-      font-weight: 800;
-      font-size: 1.7rem;
-      letter-spacing: -0.02em;
-      color: #0E2634;
-      display: flex;
-      flex-direction: column;
-      line-height: 1.2;
-    }
-    
-    .brand-small {
-      font-size: 0.75rem;
-      font-weight: 500;
-      color: #52758B;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-top: 0.15rem;
-    }
-
-    .contact-header {
-      display: flex;
-      gap: 2rem;
-      align-items: center;
-    }
-
-    .contact-link {
-      text-decoration: none;
-      color: #2E4858;
-      font-weight: 550;
-      font-size: 0.95rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      transition: all 0.18s;
-      border-bottom: 1.5px solid transparent;
-    }
-
-    .contact-link:hover {
-      border-bottom-color: #7F9AAA;
-      color: #0F2835;
-    }
-
-    /* ---------- HERO GRID · MODERN ---------- */
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      padding: 3.2rem 0 2.5rem;
-      align-items: stretch;
-    }
-
-    @media (max-width: 800px) {
-      .hero-grid { grid-template-columns: 1fr; gap: 2rem; }
-    }
-
-    .stat-list {
-      display: flex;
-      gap: 2.2rem;
-      margin-top: 2rem;
-    }
-
-    .stat-item {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .stat-num {
-      font-size: 1.8rem;
-      font-weight: 800;
-      color: #0F2C3D;
-    }
-
-    .stat-label {
-      font-size: 0.78rem;
-      font-weight: 600;
-      color: #4A6577;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-
-    /* ---------- CONTACT CARD · GLASS REFINEMENT ---------- */
-    .contact-card {
-      background: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(215, 228, 240, 0.7);
-      border-radius: 28px;
-      padding: 2rem 2.2rem;
-      box-shadow: 0 16px 32px -16px rgba(20, 40, 60, 0.08);
-      transition: box-shadow 0.25s, border-color 0.2s;
-    }
-
-    .contact-card:hover {
-      border-color: rgba(150, 180, 200, 0.5);
-      box-shadow: 0 24px 44px -20px rgba(18, 52, 77, 0.12);
-    }
-
-    .contact-card p {
-      display: flex;
-      align-items: center;
-      gap: 0.9rem;
-      font-size: 1.05rem;
-      font-weight: 550;
-      color: #1A303C;
-      margin-bottom: 1.1rem;
-    }
-
-    .contact-icon {
-      color: #386282;
-      width: 24px;
-      text-align: center;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.7rem;
-      padding: 0.95rem 2.2rem;
-      border-radius: 60px;
-      font-weight: 650;
-      font-size: 0.95rem;
-      text-decoration: none;
-      transition: all 0.25s cubic-bezier(0.02, 0.8, 0.2, 1);
-      border: 1.5px solid transparent;
-      letter-spacing: 0.01em;
-    }
-
-    .btn-primary {
-      background: #1E3848;
-      color: white;
-      box-shadow: 0 6px 14px rgba(30, 56, 72, 0.12);
-    }
-
-    .btn-primary:hover {
-      background: #254F62;
-      transform: translateY(-3px);
-      box-shadow: 0 12px 22px rgba(28, 65, 84, 0.18);
-    }
-
-    .btn-outline {
-      background: transparent;
-      border-color: #B8CEDC;
-      color: #1C3A4A;
-      backdrop-filter: blur(4px);
-    }
-
-    .btn-outline:hover {
-      border-color: #4D7A94;
-      background: rgba(235, 245, 250, 0.6);
-      transform: translateY(-3px);
-    }
-
-    /* ---------- PROCESS STEPS · MEET / TEAMS · PRODUCTION ---------- */
-    .process-steps {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-      gap: 1.8rem;
-      margin: 2.8rem 0;
-    }
-    
-    .step-item {
-      background: #FFFFFF;
-      border: 1px solid rgba(225, 236, 245, 0.8);
-      border-radius: 28px;
-      padding: 2rem 1.8rem;
-      transition: all 0.25s;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.01);
-    }
-    
-    .step-item:hover {
-      border-color: #AAC2D4;
-      box-shadow: 0 22px 34px -18px rgba(42, 75, 100, 0.12);
-      background: white;
-    }
-    
-    .step-number {
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: #2E6279;
-      background: rgba(225, 240, 250, 0.7);
-      display: inline-block;
-      padding: 0.2rem 1rem;
-      border-radius: 40px;
-      margin-bottom: 1.2rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      border: 1px solid rgba(160, 190, 210, 0.3);
-      backdrop-filter: blur(2px);
-    }
-    
-    .step-title {
-      font-size: 1.25rem;
-      font-weight: 700;
-      margin-bottom: 0.7rem;
-      color: #0D2A3A;
-    }
-    
-    .step-desc {
-      font-size: 0.9rem;
-      color: #3F5564;
-      line-height: 1.6;
-    }
-    
-    .meet-icons {
-      display: flex;
-      gap: 0.8rem;
-      margin-top: 1.2rem;
-      color: #2B6583;
-      font-size: 0.85rem;
-      font-weight: 550;
-      align-items: center;
-      background: rgba(235, 245, 252, 0.5);
-      padding: 0.3rem 0.9rem;
-      border-radius: 60px;
-      width: fit-content;
-    }
-
-    /* ---------- SERVICE GRID · DUAL PRICING · CLEAN ---------- */
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      margin: 2.5rem 0 1.8rem;
-    }
-
-    .service-item {
-      background: #FFFFFF;
-      border: 1px solid rgba(225, 235, 245, 0.8);
-      border-radius: 28px;
-      padding: 2rem 1.8rem 1.8rem;
-      transition: all 0.28s;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.01);
-    }
-
-    .service-item:hover {
-      border-color: #92B0C4;
-      box-shadow: 0 22px 38px -18px rgba(36, 68, 92, 0.1);
-      transform: translateY(-6px);
-    }
-
-    .service-icon {
-      font-size: 2.2rem;
-      color: #2D6079;
-      margin-bottom: 1.4rem;
-    }
-
-    .service-title {
-      font-size: 1.3rem;
-      font-weight: 700;
-      margin-bottom: 0.7rem;
-      color: #0D2A3A;
-    }
-
-    .service-desc {
-      font-size: 0.9rem;
-      color: #3F5564;
-      margin-bottom: 1.6rem;
-      line-height: 1.6;
-      flex: 1;
-    }
-
-    .service-meta {
-      font-weight: 600;
-      color: #1B445B;
-      font-size: 0.9rem;
-      border-top: 1px solid rgba(200, 218, 230, 0.6);
-      padding-top: 1.2rem;
-      margin-top: 0.2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.3rem;
-    }
-    
-    .price-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-    }
-    
-    .price-usd {
-      font-weight: 800;
-      color: #0C2C40;
-      font-size: 1rem;
-    }
-    
-    .price-zar {
-      font-size: 0.8rem;
-      color: #4B6F81;
-      font-weight: 600;
-    }
-
-    .timeline-tag {
-      background: rgba(225, 240, 250, 0.6);
-      padding: 0.2rem 0.9rem;
-      border-radius: 60px;
-      font-size: 0.7rem;
-      font-weight: 700;
-      color: #205670;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-
-    /* ---------- FEATURE BLOCK (FIREBASE / AUTH) · PREMIUM ---------- */
-    .feature-block {
-      background: linear-gradient(145deg, #F1F8FD 0%, #F6FBFE 100%);
-      border-radius: 36px;
-      padding: 3rem 3.2rem;
-      margin: 3.5rem 0 4rem;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 2.8rem;
-      align-items: center;
-      border: 1px solid rgba(170, 200, 220, 0.4);
-      box-shadow: 0 18px 32px -16px rgba(28, 60, 84, 0.08);
-    }
-
-    @media (max-width: 700px) {
-      .feature-block { grid-template-columns: 1fr; }
-    }
-
-    .feature-block h2 {
-      font-size: 2rem;
-      margin-bottom: 0.8rem;
-    }
-
-    .feature-tag {
-      background: rgba(255,255,255,0.8);
-      backdrop-filter: blur(6px);
-      border-radius: 100px;
-      padding: 0.4rem 1.4rem;
-      font-weight: 650;
-      font-size: 0.8rem;
-      color: #1B4559;
-      border: 1px solid rgba(140, 180, 200, 0.5);
-      display: inline-block;
-    }
-
-    .tech-pill {
-      background: white;
-      border-radius: 60px;
-      padding: 0.4rem 1.4rem;
-      border: 1px solid #C8DDEA;
-      font-weight: 550;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.85rem;
-      color: #1D445B;
-    }
-
-    /* ---------- CONTACT REMINDER · SMOOTH ---------- */
-    .contact-reminder {
-      background: rgba(255, 255, 255, 0.7);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 1px solid rgba(190, 210, 225, 0.6);
-      border-radius: 28px;
-      padding: 1.8rem 2.2rem;
-      margin: 2rem 0 1rem;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    /* ---------- FOOTER · CLEAN ---------- */
-    footer {
-      background: #F7FBFF;
-      border-top: 1px solid rgba(190, 212, 230, 0.5);
-      padding: 4rem 0 2.8rem;
-      margin-top: 4rem;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.8fr 1fr 1fr;
-      gap: 2.8rem;
-    }
-
-    @media (max-width: 800px) {
-      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
-    }
-
-    .footer-name {
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: #102531;
-      margin-bottom: 0.3rem;
-    }
-    
-    .footer-studio {
-      font-size: 0.8rem;
-      color: #3C647A;
-      margin-bottom: 1rem;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-    }
-
-    .footer-email, .footer-phone {
-      color: #2C5368;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      margin-top: 0.5rem;
-      font-weight: 550;
-      transition: color 0.18s;
-    }
-    .footer-email:hover, .footer-phone:hover { color: #0C3348; }
-
-    .footer-small {
-      font-size: 0.85rem;
-      color: #4A6B7C;
-      margin-top: 1.2rem;
-    }
-
-    /* ---------- TOAST / COPY · MODERN ---------- */
-    .copy-feedback {
-      position: fixed;
-      bottom: 36px;
-      right: 36px;
-      background: #1F363E;
-      color: white;
-      padding: 0.9rem 2.2rem;
-      border-radius: 60px;
-      font-size: 0.9rem;
-      font-weight: 550;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.25s, visibility 0.25s, transform 0.2s;
-      box-shadow: 0 16px 32px -12px rgba(0,20,30,0.2);
-      border: 1px solid rgba(255,255,255,0.15);
-      backdrop-filter: blur(10px);
-      z-index: 999;
-      letter-spacing: 0.01em;
-      transform: translateY(8px);
-    }
-
-    .copy-feedback.show {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-
-    /* ---------- LEGAL LINKS ---------- */
-    .legal-links { display: flex; gap: 1.5rem; margin-top: 1rem; }
-    .legal-link {
-      color: #4B6F82;
-      font-size: 0.8rem;
-      text-decoration: underline;
-      text-decoration-color: #B6CFDD;
-      text-underline-offset: 6px;
-      font-weight: 550;
-      transition: color 0.2s;
-    }
-    .legal-link:hover { color: #1B4459; }
-    
-    /* Modal styles – refined */
-    .modal {
-      display: none;
-      position: fixed;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(10, 25, 35, 0.5);
-      backdrop-filter: blur(6px);
-      z-index: 1000;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-    
-    .modal.active { display: flex; }
-    
-    .modal-content {
-      background: white;
-      border-radius: 32px;
-      max-width: 800px;
-      max-height: 80vh;
-      overflow-y: auto;
-      padding: 2.8rem;
-      position: relative;
-      box-shadow: 0 32px 58px -20px rgba(12, 35, 50, 0.24);
-      border: 1px solid rgba(200, 220, 240, 0.7);
-    }
-    
-    .modal-close {
-      position: absolute;
-      top: 24px; right: 28px;
-      font-size: 1.6rem;
-      cursor: pointer;
-      color: #607482;
-      transition: color 0.18s;
-    }
-    .modal-close:hover { color: #1D3543; }
-
-    /* ---------- MICRO INTERACTIONS ---------- */
-    .pointer { cursor: pointer; }
-    .transition-smooth { transition: all 0.2s ease; }
-    
-    /* new email style — info@ */
-    .email-highlight {
-      font-weight: 600; 
-      color: #1D4F65;
-    }
-  </style>
-</head>
-<body>
-
-<!-- COPY TOAST -->
-<div id="copyToast" class="copy-feedback">
-  <i class="fas fa-check-circle" style="margin-right: 8px;"></i> copied to clipboard
-</div>
-
-<!-- PRIVACY MODAL -->
-<div id="privacyModal" class="modal">
-  <div class="modal-content">
-    <span class="modal-close" id="closePrivacyModal">&times;</span>
-    <h2 style="margin-bottom: 1.5rem; font-weight: 700;">Privacy Policy</h2>
-    <div style="color: #1F3E51; font-size: 0.95rem; line-height: 1.7;">
-      <p><strong>Core Byte Solutions</strong> respects your privacy.</p>
-      <p style="margin-top: 1.2rem;"><strong>Data collection</strong><br>This site uses Google Analytics to understand visitor behavior. Anonymized data only. No personally identifiable information collected via analytics.</p>
-      <p style="margin-top: 1.2rem;"><strong>Contact information</strong><br>When you email (<span class="email-highlight">info@corebytesolutions.site</span>) or WhatsApp, your contact details are used solely to respond. Never shared or sold.</p>
-      <p style="margin-top: 1.2rem;"><strong>Cookies</strong><br>No tracking cookies beyond Google Analytics. You can disable cookies in browser settings.</p>
-      <p style="margin-top: 1.2rem;"><strong>Service delivery</strong><br>All services delivered personally. Client confidentiality maintained at all times.</p>
-      <p style="margin-top: 1.8rem;"><i class="fas fa-shield-alt" style="color: #386282;"></i> Last updated: February 2025</p>
-    </div>
-  </div>
-</div>
-
-<!-- TERMS MODAL -->
-<div id="termsModal" class="modal">
-  <div class="modal-content">
-    <span class="modal-close" id="closeTermsModal">&times;</span>
-    <h2 style="margin-bottom: 1.5rem; font-weight: 700;">Terms of Service</h2>
-    <div style="color: #1F3E51; font-size: 0.95rem; line-height: 1.7;">
-      <p><strong>Core Byte Solutions – Terms</strong></p>
-      <p style="margin-top: 1.2rem;"><strong>1. Services</strong><br>Web development, booking systems, CV/LinkedIn, Firebase/auth, hosting, fixes. Individual scope with written agreement.</p>
-      <p style="margin-top: 1.2rem;"><strong>2. Timeline</strong><br>Standard website 1-2 weeks from domain/content approval. Complex projects scoped. Hosting setup 24–48h.</p>
-      <p style="margin-top: 1.2rem;"><strong>3. Payments</strong><br>50% deposit, 50% on completion. USD or ZAR via EFT, SnapScan, PayPal, international wire.</p>
-      <p style="margin-top: 1.2rem;"><strong>4. Hosting</strong><br>Monthly/yearly hosting: updates, security, backups. 14 days cancellation. You own your site files.</p>
-      <p style="margin-top: 1.2rem;"><strong>5. Revisions</strong><br>Two rounds included. Additional changes $20/hr or R350/hr.</p>
-      <p style="margin-top: 1.8rem;"><i class="fas fa-gavel" style="color: #386282;"></i> Johannesburg, South Africa – serving clients worldwide</p>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-
-  <!-- HEADER · NEW EMAIL: INFO@CORE..... -->
-  <div class="header-row">
-    <span class="brand">
-      Core Byte Solutions
-      <span class="brand-small">by Nompumelelo Sibiya · global</span>
-    </span>
-    <div class="contact-header">
-      <!-- UPDATED EMAIL ADDRESS GLOBALLY -->
-      <a href="mailto:info@corebytesolutions.site" class="contact-link" id="headerEmailLink">
-        <i class="fas fa-envelope"></i> info@corebytesolutions.site
-      </a>
-      <a href="https://wa.me/27724728166" class="contact-link" id="headerWALink" target="_blank">
-        <i class="fab fa-whatsapp"></i> +27 72 472 8166
-      </a>
-      <a href="tel:+27724728166" class="contact-link" id="headerCallLink">
-        <i class="fas fa-phone"></i> call
-      </a>
-    </div>
-  </div>
-
-  <!-- HERO · MODERN -->
-  <div class="hero-grid">
-    <div class="hero-title">
-      <div class="badge" style="margin-bottom: 1.5rem;">CORE BYTE SOLUTIONS · REMOTE · USA · UK · EU · AFRICA</div>
-      <h1>Websites, booking systems<br>& hosting that work.</h1>
-      <div class="subhead" style="margin-top: 1.2rem;">
-        I build, fix and maintain digital platforms. 50+ projects delivered.<br>Clear process, full ownership. USD/ZAR pricing.
-      </div>
-      <div class="stat-list">
-        <div class="stat-item"><span class="stat-num">10+</span><span class="stat-label">projects</span></div>
-        <div class="stat-item"><span class="stat-num">1-2 wks</span><span class="stat-label">delivery</span></div>
-        <div class="stat-item"><span class="stat-num">24/7</span><span class="stat-label">hosting support</span></div>
-      </div>
-    </div>
-
-    <!-- CONTACT CARD · NEW EMAIL VISIBLE -->
-    <div class="contact-card">
-      <p><i class="fas fa-code contact-icon"></i> Core Byte Solutions</p>
-      <!-- EMAIL UPDATED -->
-      <p style="cursor: pointer;" id="contactCardEmail"><i class="fas fa-envelope contact-icon"></i> info@corebytesolutions.site</p>
-      <p style="cursor: pointer;" id="contactCardPhone"><i class="fab fa-whatsapp contact-icon"></i> +27 72 472 8166</p>
-      <p style="cursor: pointer;" id="contactCardCall"><i class="fas fa-phone contact-icon"></i> +27 72 472 8166 (calls)</p>
-      <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
-        <a href="mailto:info@corebytesolutions.site" class="btn btn-primary" style="flex:1;" id="heroEmailBtn">
-          <i class="fas fa-paper-plane"></i> Email
-        </a>
-        <a href="https://wa.me/27724728166?text=Hello%20Nompumelelo,%20I'm%20interested%20in%20a%20website%20or%20booking%20system." target="_blank" class="btn btn-outline" style="flex:1;">
-          <i class="fab fa-whatsapp"></i> WhatsApp
-        </a>
-      </div>
-      <p style="font-size: 0.75rem; margin-top: 1.2rem; color: #3E6070;">
-        <i class="fas fa-bolt" style="opacity: 0.8;"></i> Response &lt;2h · calls & WhatsApp · USD/ZAR
-      </p>
-    </div>
-  </div>
-
-  <!-- PROCESS SECTION – Google Meet/Teams embedded -->
-  <div style="margin-top: 3.5rem;">
-    <div style="display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap;">
-      <h2>How a website happens</h2>
-      <span class="badge" style="background: white;">1-2 week delivery · realistic</span>
-    </div>
-    <hr>
-  </div>
-  
-  <div class="process-steps">
-    <div class="step-item">
-      <span class="step-number">step 01</span>
-      <div class="step-title">Free consultation</div>
-      <div class="step-desc">20‑min Google Meet or Teams call. Goals, audience, features. No pressure.</div>
-      <div class="meet-icons"><i class="fab fa-google"></i> Meet <i class="fab fa-microsoft" style="margin-left: 0.6rem;"></i> Teams</div>
-    </div>
-    <div class="step-item">
-      <span class="step-number">step 02</span>
-      <div class="step-title">Name & domain</div>
-      <div class="step-desc">I help you choose, check availability, and set it up. You own it completely.</div>
-    </div>
-    <div class="step-item">
-      <span class="step-number">step 03</span>
-      <div class="step-title">Development</div>
-      <div class="step-desc">Build over 1-2 weeks. Progress updates + private preview link.</div>
-    </div>
-    <div class="step-item">
-      <span class="step-number">step 04</span>
-      <div class="step-title">Review & refine</div>
-      <div class="step-desc">You review, I tweak. Two rounds of changes included.</div>
-    </div>
-    <div class="step-item">
-      <span class="step-number">step 05</span>
-      <div class="step-title">Launch & host</div>
-      <div class="step-desc">Site goes live. Hosting setup or migration to your host.</div>
-    </div>
-  </div>
-
-  <!-- SERVICES -->
-  <div style="margin-top: 2.8rem;">
-    <div style="display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap;">
-      <h2>Services – fixed scope, dual pricing</h2>
-      <span class="badge" style="background: white;">USD · ZAR · global clients</span>
-    </div>
-    <hr>
-  </div>
-  
-  <!-- 6 SERVICE GRID · DUAL PRICING USD/ZAR · email updated in meta only -->
-  <div class="service-grid">
-    <!-- 1. Website setup -->
-    <div class="service-item">
-      <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
-      <div class="service-title">Website setup</div>
-      <div class="service-desc">Professional small business website. Copy, design, hosting connection, domain help. Full ownership.</div>
-      <div class="service-meta">
-        <div class="price-row"><span class="price-usd">$165 USD</span><span class="timeline-tag">1-2 weeks</span></div>
-        <div class="price-zar">R2,999 ZAR</div>
-      </div>
-    </div>
-    <!-- 2. Fix & improve -->
-    <div class="service-item">
-      <div class="service-icon"><i class="fas fa-screwdriver-wrench"></i></div>
-      <div class="service-title">Fix & improve</div>
-      <div class="service-desc">Performance, mobile, broken forms, hosting migration, security updates.</div>
-      <div class="service-meta">
-        <div class="price-row"><span class="price-usd">$70 USD</span><span class="timeline-tag">3-5 days</span></div>
-        <div class="price-zar">R1,290 ZAR</div>
-      </div>
-    </div>
-    <!-- 3. CV + LinkedIn -->
-    <div class="service-item">
-      <div class="service-icon"><i class="fas fa-file-user"></i></div>
-      <div class="service-title">CV + LinkedIn</div>
-      <div class="service-desc">ATS‑friendly CV, LinkedIn headline, summary, banner, keywords.</div>
-      <div class="service-meta">
-        <div class="price-row"><span class="price-usd">$35 USD</span><span class="timeline-tag">2-3 days</span></div>
-        <div class="price-zar">R650 ZAR</div>
-      </div>
-    </div>
-    <!-- 4. Salon booking systems -->
-    <div class="service-item">
-      <div class="service-icon"><i class="fas fa-calendar-check"></i></div>
-      <div class="service-title">Salon booking systems</div>
-      <div class="service-desc">Tailored scheduling, calendar sync, automated reminders, deposits.</div>
-      <div class="service-meta">
-        <div class="price-row"><span class="price-usd">$275-$550 USD</span><span class="timeline-tag">1-2 weeks</span></div>
-        <div class="price-zar">R5,000-R10,000 ZAR</div>
-      </div>
-    </div>
-    <!-- 5. Firebase/auth for devs -->
-    <div class="service-item">
-      <div class="service-icon"><i class="fas fa-fire"></i><i class="fas fa-lock" style="margin-left: 8px;"></i></div>
-      <div class="service-title">Firebase/auth for devs</div>
-      <div class="service-desc">Authentication, Firestore rules, social login, secure backend. 48h.</div>
-      <div class="service-meta">
-        <div class="price-row"><span class="price-usd">$110 USD</span><span class="timeline-tag">2-3 days</span></div>
-        <div class="price-zar">R1,990 ZAR</div>
-      </div>
-    </div>
-    <!-- 6. Hosting + maintenance -->
-    <div class="service-item">
-      <div class="service-icon"><i class="fas fa-server"></i></div>
-      <div class="service-title">Hosting + maintenance</div>
-      <div class="service-desc">Fast, secure hosting. Weekly backups, uptime, plugin/security updates.</div>
-      <div class="service-meta">
-        <div class="price-row"><span class="price-usd">$11 USD / mo</span><span class="timeline-tag">24/7</span></div>
-        <div class="price-zar">R199 ZAR / mo</div>
-        <div style="font-size: 0.8rem; color: #1B5068; margin-top: 0.2rem;">$110 USD / R1,990 ZAR yearly</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- FIREBASE BLOCK (mention new email) -->
-  <div class="feature-block">
-    <div>
-      <span class="feature-tag"><i class="fas fa-code-branch"></i> specialised · Firebase & Auth</span>
-      <h2 style="margin-top: 1rem;">For developers and startups</h2>
-      <p style="font-size: 1.1rem; color: #1F4056; margin: 1rem 0 1.5rem; font-weight: 400;">
-        You focus on the frontend. I implement secure Firebase authentication, Firestore rules, social login — clean, documented, scalable. 5+ projects.
-      </p>
-      <div style="display: flex; gap: 1.2rem; flex-wrap: wrap;">
-        <span class="tech-pill"><i class="fas fa-check-circle" style="color: #23664B;"></i> 48h delivery</span>
-        <span class="tech-pill"><i class="fas fa-check-circle" style="color: #23664B;"></i> Google, email, social</span>
-        <span class="tech-pill"><i class="fas fa-globe"></i> USA · UK · EU</span>
-      </div>
-    </div>
-    <div style="background: white; border-radius: 24px; padding: 1.8rem; border: 1px solid #D0E2EE;">
-      <p style="font-weight: 800; margin-bottom: 0.5rem; font-size: 1.2rem; color: #1E4257;">$110 USD / R1,990 ZAR</p>
-      <p style="color: #2D5E74; margin-bottom: 1.2rem;">Firebase auth setup, Firestore rules, hosting config. Flat rate.</p>
-      <a href="https://wa.me/27724728166" target="_blank" style="text-decoration: none; color: #1F485D; font-weight: 700;">enquire <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-
-  <!-- CONTACT REMINDER – updated email -->
-  <div class="contact-reminder">
-    <div>
-      <span style="font-weight: 700; font-size: 1.1rem; color: #173D4F;">Core Byte Solutions</span>
-      <span style="margin-left: 1rem; color: #2F6075;"><i class="fas fa-envelope"></i> info@corebytesolutions.site</span>
-      <span style="margin-left: 1.5rem; color: #2F6075;"><i class="fab fa-whatsapp"></i> +27 72 472 8166</span>
-      <span style="margin-left: 1.5rem; color: #2F6075;"><i class="fas fa-phone"></i> calls & WhatsApp</span>
-    </div>
-    <div>
-      <span class="badge" style="background: white;">response &lt;2h · USD/ZAR</span>
-    </div>
-  </div>
-</div> <!-- end container -->
-
-<!-- FOOTER · PRODUCTION READY · EMAIL UPDATED -->
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-name">Core Byte Solutions</div>
-        <div class="footer-studio">by Nompumelelo Sibiya · global digital studio</div>
-        <a href="mailto:info@corebytesolutions.site" class="footer-email" id="footerEmail"><i class="fas fa-envelope"></i> info@corebytesolutions.site</a>
-        <a href="https://wa.me/27724728166" class="footer-phone" id="footerPhone" target="_blank"><i class="fab fa-whatsapp"></i> +27 72 472 8166</a>
-        <a href="tel:+27724728166" class="footer-phone" id="footerCall" style="margin-top: 0.2rem;"><i class="fas fa-phone"></i> +27 72 472 8166 (calls)</a>
-        <div class="footer-small">
-          <i class="fas fa-bolt"></i> 1-2 week delivery · hosting from $11/mo · R199/mo
-        </div>
-      </div>
-      <div>
-        <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1.2rem; color: #173B4C;">Services</h4>
-        <ul style="list-style: none; padding: 0;">
-          <li style="margin-bottom: 0.6rem; color: #2C5770;">Website setup · 1-2 weeks</li>
-          <li style="margin-bottom: 0.6rem; color: #2C5770;">Fix speed / mobile / forms</li>
-          <li style="margin-bottom: 0.6rem; color: #2C5770;">CV + LinkedIn</li>
-          <li style="margin-bottom: 0.6rem; color: #2C5770;">Salon booking systems</li>
-          <li style="margin-bottom: 0.6rem; color: #2C5770;">Firebase/auth for devs</li>
-          <li style="margin-bottom: 0.6rem; color: #2C5770;">Hosting & maintenance</li>
-        </ul>
-      </div>
-      <div>
-        <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1.2rem; color: #173B4C;">Connect</h4>
-        <p style="margin-bottom: 0.5rem; color: #2C5770;"><i class="fas fa-check-circle" style="color: #386F87;"></i> info@corebytesolutions.site</p>
-        <p style="margin-bottom: 0.5rem; color: #2C5770;"><i class="fab fa-whatsapp"></i> +27 72 472 8166</p>
-        <p style="margin-bottom: 0.5rem; color: #2C5770;"><i class="fas fa-phone"></i> +27 72 472 8166</p>
-        <div class="legal-links">
-          <a href="#" id="privacyLink" class="legal-link">Privacy</a>
-          <a href="#" id="termsLink" class="legal-link">Terms</a>
-        </div>
-        <p style="margin-top: 1.5rem; font-size: 0.85rem; color: #34687E;">Johannesburg · remote worldwide · USD/ZAR</p>
-      </div>
-    </div>
-    <div style="border-top: 1px solid rgba(170, 200, 220, 0.5); margin-top: 2.8rem; padding-top: 1.8rem; display: flex; justify-content: space-between; flex-wrap: wrap;">
-      <span style="color: #3D6376; font-size: 0.85rem;">© 2025 Core Byte Solutions – independent digital studio</span>
-      <span style="color: #3D6376; font-size: 0.85rem;">info@corebytesolutions.site · +27 72 472 8166</span>
-    </div>
-  </div>
-</footer>
-
-<!-- JAVASCRIPT · EMAIL UPDATED GLOBALLY, MODERN TOAST, MODAL -->
-<script>
-  (function() {
-    "use strict";
-    const toast = document.getElementById('copyToast');
-    function showCopyMessage(text = 'copied') {
-      if (!toast) return;
-      toast.innerHTML = `<i class="fas fa-check-circle" style="margin-right: 8px;"></i> ${text} copied`;
-      toast.classList.add('show');
-      setTimeout(() => toast.classList.remove('show'), 2400);
-    }
-
-    // 🔁 GLOBAL UPDATE: email changed to info@corebytesolutions.site
-    const EMAIL = 'info@corebytesolutions.site';
-    const PHONE = '+27724728166';
-
-    // setup mail copy
-    function setupEmailCopy(element) {
-      if (!element) return;
-      element.addEventListener('click', function(e) {
-        const href = this.href || '';
-        if (href.includes('mailto:')) {
-          e.preventDefault();
-          navigator.clipboard.writeText(EMAIL).then(() => {
-            showCopyMessage('email');
-            // always open mail client
-            window.location.href = `mailto:${EMAIL}`;
-          }).catch(() => {});
-        }
-      });
-    }
-    document.querySelectorAll('a[href^="mailto:"]').forEach(setupEmailCopy);
-
-    // setup WA copy
-    function setupWACopy(element) {
-      if (!element) return;
-      element.addEventListener('click', function(e) {
-        e.preventDefault();
-        navigator.clipboard.writeText(PHONE).then(() => {
-          showCopyMessage('WhatsApp number');
-          window.open('https://wa.me/27724728166?text=Hello%20Nompumelelo,%20I\'m%20interested%20in%20a%20website%20or%20booking%20system.', '_blank');
-        });
-      });
-    }
-    document.querySelectorAll('a[href*="wa.me"]').forEach(setupWACopy);
-
-    // setup call copy
-    function setupCallCopy(element) {
-      if (!element) return;
-      element.addEventListener('click', function(e) {
-        e.preventDefault();
-        navigator.clipboard.writeText(PHONE).then(() => {
-          showCopyMessage('phone number');
-          window.location.href = 'tel:+27724728166';
-        });
-      });
-    }
-    document.querySelectorAll('a[href^="tel:"]').forEach(setupCallCopy);
-
-    // contact card email (updated)
-    const cardEmail = document.getElementById('contactCardEmail');
-    if (cardEmail) {
-      cardEmail.addEventListener('click', function(e) {
-        e.stopPropagation();
-        navigator.clipboard.writeText(EMAIL).then(() => {
-          showCopyMessage('email');
-          window.location.href = `mailto:${EMAIL}`;
-        });
-      });
-    }
-
-    const cardPhone = document.getElementById('contactCardPhone');
-    if (cardPhone) {
-      cardPhone.addEventListener('click', function(e) {
-        e.stopPropagation();
-        navigator.clipboard.writeText(PHONE).then(() => {
-          showCopyMessage('WhatsApp number');
-          window.open('https://wa.me/27724728166?text=Hello%20Nompumelelo,%20I\'m%20interested%20in%20a%20website%20or%20booking%20system.', '_blank');
-        });
-      });
-    }
-    
-    const cardCall = document.getElementById('contactCardCall');
-    if (cardCall) {
-      cardCall.addEventListener('click', function(e) {
-        e.stopPropagation();
-        navigator.clipboard.writeText(PHONE).then(() => {
-          showCopyMessage('phone number');
-          window.location.href = 'tel:+27724728166';
-        });
-      });
-    }
-
-    // footer interactions
-    const footerPhone = document.getElementById('footerPhone');
-    if (footerPhone) {
-      footerPhone.addEventListener('click', function(e) {
-        e.preventDefault();
-        navigator.clipboard.writeText(PHONE).then(() => {
-          showCopyMessage('WhatsApp');
-          window.open('https://wa.me/27724728166', '_blank');
-        });
-      });
-    }
-    
-    const footerCall = document.getElementById('footerCall');
-    if (footerCall) {
-      footerCall.addEventListener('click', function(e) {
-        e.preventDefault();
-        navigator.clipboard.writeText(PHONE).then(() => {
-          showCopyMessage('phone number');
-          window.location.href = 'tel:+27724728166';
-        });
-      });
-    }
-
-    // MODAL CONTROLS
-    const privacyModal = document.getElementById('privacyModal');
-    const termsModal = document.getElementById('termsModal');
-    const privacyLink = document.getElementById('privacyLink');
-    const termsLink = document.getElementById('termsLink');
-    const closePrivacy = document.getElementById('closePrivacyModal');
-    const closeTerms = document.getElementById('closeTermsModal');
-    
-    if (privacyLink && privacyModal) privacyLink.addEventListener('click', (e) => { e.preventDefault(); privacyModal.classList.add('active'); });
-    if (termsLink && termsModal) termsLink.addEventListener('click', (e) => { e.preventDefault(); termsModal.classList.add('active'); });
-    if (closePrivacy && privacyModal) closePrivacy.addEventListener('click', () => privacyModal.classList.remove('active'));
-    if (closeTerms && termsModal) closeTerms.addEventListener('click', () => termsModal.classList.remove('active'));
-    window.addEventListener('click', (e) => {
-      if (e.target === privacyModal) privacyModal.classList.remove('active');
-      if (e.target === termsModal) termsModal.classList.remove('active');
-    });
-    
-  })();
-</script>
-
-<!-- Google tag (gtag.js) -->
+<!-- ============ GOOGLE ANALYTICS 4 ============ -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GHCCNLY3EH"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
-  gtag('config', 'G-GHCCNLY3EH');
-
-
+  gtag('config', 'G-GHCCNLY3EH', { anonymize_ip: true, send_page_view: true });
 </script>
+
+<!-- ============ PRIMARY SEO ============ -->
+<title>Free Online Tools: JSON Formatter, Base64 & Image Compressor</title>
+<meta name="description" content="Free online tools that run in your browser. JSON formatter, Base64 encoder, word counter, image compressor. No signup, nothing uploaded to servers.">
+
+<meta name="keywords" content="free online tools, json formatter, json formatter online, json validator, base64 encoder, base64 decoder, base64 encode online, word counter, word counter online, character counter, image compressor, compress image online, compress jpg, compress png, free developer tools, browser tools, private online tools, online utilities, web tools">
+
+<meta name="author" content="Core Byte Solutions">
+<meta name="theme-color" content="#FCFDFE">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+<!-- ============ OPEN GRAPH ============ -->
+<meta property="og:title" content="Free Online Tools: JSON Formatter, Base64 & Image Compressor">
+<meta property="og:description" content="Free browser-based tools. JSON formatter, Base64 encoder, word counter, image compressor. No signup, nothing uploaded.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://corebyte.site">
+<meta property="og:site_name" content="CoreByte">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://corebyte.site/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- ============ TWITTER ============ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Online Tools: JSON Formatter, Base64 & Image Compressor">
+<meta name="twitter:description" content="Free browser-based tools. No signup, nothing uploaded.">
+
+<link rel="canonical" href="https://corebyte.site">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- ============ STRUCTURED DATA ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "CoreByte Tools",
+  "alternateName": "Free Online Tools",
+  "url": "https://corebyte.site",
+  "applicationCategory": "UtilitiesApplication",
+  "applicationSubCategory": "DeveloperApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "description": "Free browser-based tools: JSON formatter, Base64 encoder, word counter, image compressor. Nothing is uploaded to servers.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "featureList": [
+    "JSON Formatter",
+    "JSON Validator",
+    "JSON Minifier",
+    "Base64 Encoder",
+    "Base64 Decoder",
+    "Word Counter",
+    "Character Counter",
+    "Image Compressor",
+    "JPG Compressor",
+    "PNG Compressor"
+  ]
+}
+</script>
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #FCFDFE;
+    color: #1A1E24;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 48px; }
+  @media (max-width: 768px) { .container { padding: 0 24px; } }
+
+  h1, h2, h3 { font-weight: 700; letter-spacing: -0.022em; color: #0C151C; }
+  h1 { font-size: 3.2rem; line-height: 1.1; font-weight: 800; margin-bottom: 0.6rem; letter-spacing: -0.03em; }
+  h2 { font-size: 1.9rem; font-weight: 700; letter-spacing: -0.018em; color: #1A262E; margin-bottom: 0.8rem; }
+  h3 { font-size: 1.25rem; font-weight: 650; margin-bottom: 0.5rem; }
+
+  .subhead { font-size: 1.15rem; font-weight: 400; color: #3C4F5E; max-width: 680px; line-height: 1.55; }
+
+  .badge {
+    display: inline-block;
+    background: rgba(240, 245, 250, 0.8);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    color: #1F3A4F;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.35rem 1.1rem;
+    border-radius: 60px;
+    border: 1px solid rgba(200, 212, 225, 0.5);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+  }
+
+  /* ============ HEADER ============ */
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0 1.2rem;
+    border-bottom: 1px solid rgba(225, 235, 245, 0.8);
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .brand {
+    font-weight: 800;
+    font-size: 1.6rem;
+    letter-spacing: -0.02em;
+    color: #0E2634;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+  .brand-small {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #52758B;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 0.15rem;
+  }
+  .header-nav { display: flex; gap: 1.8rem; align-items: center; flex-wrap: wrap; }
+  .header-nav a {
+    text-decoration: none;
+    color: #2E4858;
+    font-weight: 500;
+    font-size: 0.92rem;
+    transition: color 0.18s;
+  }
+  .header-nav a:hover { color: #0F2835; }
+
+  /* ============ HERO ============ */
+  .hero { padding: 3rem 0 2rem; }
+  .hero .badge { margin-bottom: 1.5rem; }
+
+  .hero-stats {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  .hero-stat { display: flex; flex-direction: column; }
+  .hero-stat-num { font-size: 1.6rem; font-weight: 800; color: #0F2C3D; letter-spacing: -0.02em; }
+  .hero-stat-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #4A6577;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 0.1rem;
+  }
+
+  /* ============ TABS ============ */
+  .tabs {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 2rem 0 1.5rem;
+    border-bottom: 1px solid rgba(220, 230, 240, 0.7);
+    padding-bottom: 0;
+  }
+  .tab-btn {
+    background: transparent;
+    border: none;
+    padding: 0.75rem 1.2rem;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #52758B;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -1px;
+    font-family: inherit;
+    transition: color 0.18s, border-color 0.18s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .tab-btn:hover { color: #1E3848; }
+  .tab-btn.active { color: #1E3848; border-bottom-color: #1E3848; }
+  .tab-btn i { font-size: 0.85rem; }
+
+  .tab-panel { display: none; padding-top: 1rem; animation: fadeIn 0.28s ease; }
+  .tab-panel.active { display: block; }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ============ TOOL CARD ============ */
+  .tool-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(215, 228, 240, 0.7);
+    border-radius: 28px;
+    padding: 2rem 2.2rem;
+    box-shadow: 0 16px 32px -16px rgba(20, 40, 60, 0.08);
+    margin-bottom: 2rem;
+    transition: border-color 0.25s, box-shadow 0.25s;
+  }
+  .tool-card:hover { border-color: rgba(150, 180, 200, 0.5); box-shadow: 0 24px 44px -20px rgba(18, 52, 77, 0.12); }
+
+  .tool-card h1 { font-size: 1.9rem; margin-bottom: 0.4rem; letter-spacing: -0.02em; }
+  .tool-card .intro { color: #3F5564; font-size: 1rem; margin-bottom: 1.6rem; }
+  .tool-card .intro strong { color: #1E3848; font-weight: 600; }
+
+  /* ============ BUTTONS ============ */
+  .toolbar { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 1.2rem; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.4rem;
+    border-radius: 60px;
+    font-weight: 600;
+    font-size: 0.88rem;
+    text-decoration: none;
+    transition: all 0.22s cubic-bezier(0.02, 0.8, 0.2, 1);
+    border: 1.5px solid transparent;
+    font-family: inherit;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+  }
+  .btn-primary {
+    background: #1E3848;
+    color: white;
+    box-shadow: 0 6px 14px rgba(30, 56, 72, 0.12);
+  }
+  .btn-primary:hover {
+    background: #254F62;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 22px rgba(28, 65, 84, 0.18);
+  }
+  .btn-primary:active { transform: translateY(0); }
+  .btn-outline {
+    background: transparent;
+    border-color: #B8CEDC;
+    color: #1C3A4A;
+    backdrop-filter: blur(4px);
+  }
+  .btn-outline:hover {
+    border-color: #4D7A94;
+    background: rgba(235, 245, 250, 0.6);
+    transform: translateY(-2px);
+  }
+  .btn-outline:active { transform: translateY(0); }
+  .btn:disabled { opacity: 0.45; cursor: not-allowed; transform: none !important; }
+  .btn:focus-visible { outline: 2px solid #4D7A94; outline-offset: 2px; }
+
+  /* ============ PANES ============ */
+  .panes { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+  .pane {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 1px solid rgba(220, 232, 240, 0.8);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .pane:focus-within { border-color: #4D7A94; }
+  .pane-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid rgba(220, 232, 240, 0.6);
+    background: #F7FBFF;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #52758B;
+  }
+  .status {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 0;
+    padding: 3px 10px;
+    border-radius: 60px;
+    background: rgba(230, 240, 248, 0.8);
+    color: #52758B;
+    border: 1px solid rgba(200, 215, 225, 0.5);
+    transition: all 0.2s;
+  }
+  .status.ok { background: rgba(220, 245, 225, 0.9); color: #1F6B3A; border-color: rgba(160, 210, 175, 0.6); }
+  .status.err { background: rgba(255, 228, 228, 0.9); color: #A02020; border-color: rgba(230, 170, 170, 0.6); }
+
+  textarea {
+    width: 100%;
+    min-height: 340px;
+    padding: 1rem;
+    border: none;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.88rem;
+    line-height: 1.55;
+    resize: vertical;
+    background: white;
+    color: #1A1E24;
+    outline: none;
+    tab-size: 2;
+  }
+  textarea:focus { background: #FEFEFF; }
+  textarea::placeholder { color: #A0B4C4; }
+
+  .error-msg {
+    color: #A02020;
+    background: rgba(255, 235, 235, 0.7);
+    border: 1px solid rgba(230, 180, 180, 0.6);
+    padding: 0.75rem 1rem;
+    border-radius: 14px;
+    margin-bottom: 1rem;
+    font-size: 0.88rem;
+    font-family: ui-monospace, monospace;
+    display: none;
+    word-break: break-word;
+  }
+  .error-msg.show { display: block; }
+
+  /* ============ STATS BAR ============ */
+  .stats {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 0.8rem 1.2rem;
+    background: #F7FBFF;
+    border: 1px solid rgba(215, 228, 240, 0.7);
+    border-radius: 16px;
+    font-size: 0.83rem;
+    color: #52758B;
+    margin-bottom: 1.5rem;
+  }
+  .stats strong { color: #1E3848; font-weight: 700; }
+
+  /* ============ METRIC GRID ============ */
+  .metric-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0 1rem;
+  }
+  .metric {
+    background: white;
+    border: 1px solid rgba(220, 232, 240, 0.8);
+    border-radius: 20px;
+    padding: 1.2rem 1rem;
+    text-align: center;
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  }
+  .metric:hover { border-color: #AAC2D4; box-shadow: 0 12px 22px -14px rgba(42, 75, 100, 0.12); transform: translateY(-2px); }
+  .metric-value { font-size: 1.9rem; font-weight: 800; color: #1E3848; line-height: 1.15; letter-spacing: -0.02em; }
+  .metric-label {
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #52758B;
+    font-weight: 700;
+    margin-top: 0.3rem;
+  }
+
+  /* ============ DROP ZONE ============ */
+  .drop-zone {
+    display: block;
+    border: 2px dashed rgba(180, 205, 220, 0.7);
+    border-radius: 24px;
+    padding: 3rem 1rem;
+    text-align: center;
+    background: rgba(250, 253, 255, 0.6);
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s, transform 0.2s;
+    margin-bottom: 1.5rem;
+  }
+  .drop-zone:hover, .drop-zone.dragover {
+    border-color: #4D7A94;
+    background: rgba(235, 245, 252, 0.8);
+    transform: translateY(-2px);
+  }
+  .drop-zone .icon { font-size: 2.5rem; color: #4D7A94; margin-bottom: 0.6rem; }
+  .drop-zone h3 { font-size: 1.1rem; margin-bottom: 0.25rem; color: #0D2A3A; }
+  .drop-zone p { color: #52758B; font-size: 0.88rem; }
+  .drop-zone input { display: none; }
+  .drop-zone:focus-within { outline: 2px solid #4D7A94; outline-offset: 4px; }
+
+  /* ============ CONTROLS ============ */
+  .controls {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #F7FBFF;
+    border: 1px solid rgba(215, 228, 240, 0.7);
+    border-radius: 18px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .controls label { font-size: 0.88rem; font-weight: 600; color: #1E3848; }
+  .controls input[type="range"] { flex: 1; min-width: 180px; accent-color: #1E3848; height: 6px; }
+  .controls .value { font-weight: 800; color: #1E3848; min-width: 50px; font-variant-numeric: tabular-nums; }
+
+  /* ============ RESULTS ============ */
+  .results { display: grid; gap: 1rem; margin-bottom: 1.5rem; }
+  .result-card {
+    background: white;
+    border: 1px solid rgba(220, 232, 240, 0.8);
+    border-radius: 20px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    gap: 1rem;
+    align-items: center;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .result-card:hover { border-color: #AAC2D4; box-shadow: 0 12px 22px -16px rgba(42, 75, 100, 0.1); }
+  .result-card img { width: 80px; height: 80px; object-fit: cover; border-radius: 12px; background: #F0F5FA; }
+  .result-info h4 { font-size: 0.92rem; margin-bottom: 0.2rem; word-break: break-all; font-weight: 600; color: #0D2A3A; }
+  .result-info .meta { font-size: 0.78rem; color: #52758B; }
+  .result-info .savings { color: #1F6B3A; font-weight: 700; font-size: 0.83rem; margin-top: 0.2rem; }
+  .result-card .actions { display: flex; gap: 0.5rem; flex-direction: column; }
+
+  .summary {
+    background: rgba(220, 245, 225, 0.7);
+    border: 1px solid rgba(160, 210, 175, 0.6);
+    border-radius: 18px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.92rem;
+    color: #1F4A2A;
+  }
+  .summary strong { font-size: 1.05rem; color: #173A20; }
+
+  /* ============ ARTICLE ============ */
+  article {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(220, 230, 240, 0.7);
+  }
+  article h2 { font-size: 1.2rem; margin: 1.5rem 0 0.6rem; font-weight: 700; }
+  article h2:first-child { margin-top: 0; }
+  article p { margin-bottom: 1rem; color: #3F5564; font-size: 0.95rem; line-height: 1.7; }
+  article ol { margin-left: 1.5rem; margin-bottom: 1rem; color: #3F5564; font-size: 0.95rem; }
+  article li { margin-bottom: 0.3rem; }
+  article code {
+    background: rgba(240, 245, 250, 0.8);
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-family: ui-monospace, monospace;
+    font-size: 0.88em;
+    color: #1E3848;
+  }
+
+  /* ============ FOOTER ============ */
+  footer {
+    background: #F7FBFF;
+    border-top: 1px solid rgba(190, 212, 230, 0.5);
+    padding: 3.5rem 0 2.5rem;
+    margin-top: 4rem;
+  }
+  .footer-grid { display: grid; grid-template-columns: 1.8fr 1fr 1fr; gap: 2.5rem; }
+  @media (max-width: 800px) { .footer-grid { grid-template-columns: 1fr; gap: 2rem; } }
+
+  .footer-name { font-size: 1.5rem; font-weight: 800; color: #102531; margin-bottom: 0.3rem; }
+  .footer-studio { font-size: 0.78rem; color: #3C647A; margin-bottom: 1rem; font-weight: 600; letter-spacing: 0.02em; text-transform: uppercase; }
+  .footer a { color: #2C5368; text-decoration: none; transition: color 0.18s; font-weight: 500; }
+  .footer a:hover { color: #0C3348; }
+  .footer ul { list-style: none; }
+  .footer li { margin-bottom: 0.55rem; color: #2C5770; font-size: 0.9rem; }
+  .footer h4 { font-size: 1rem; font-weight: 700; margin-bottom: 1.1rem; color: #173B4C; }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(170, 200, 220, 0.5);
+    margin-top: 2.5rem;
+    padding-top: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: #3D6376;
+    font-size: 0.83rem;
+  }
+
+  /* ============ COPY TOAST ============ */
+  .copy-feedback {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #1F363E;
+    color: white;
+    padding: 0.85rem 1.8rem;
+    border-radius: 60px;
+    font-size: 0.88rem;
+    font-weight: 550;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s, visibility 0.25s, transform 0.25s;
+    box-shadow: 0 16px 32px -12px rgba(0,20,30,0.2);
+    border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    transform: translateY(8px);
+    pointer-events: none;
+  }
+  .copy-feedback.show { opacity: 1; visibility: visible; transform: translateY(0); }
+
+  @media (max-width: 768px) {
+    .panes { grid-template-columns: 1fr; }
+    h1 { font-size: 2.2rem; }
+    .tool-card h1 { font-size: 1.5rem; }
+    .tool-card { padding: 1.5rem 1.3rem; }
+    .tab-btn { padding: 0.6rem 0.9rem; font-size: 0.83rem; }
+    .result-card { grid-template-columns: 60px 1fr; }
+    .result-card img { width: 60px; height: 60px; }
+    .result-card .actions { grid-column: 1 / -1; flex-direction: row; }
+    .header-nav { gap: 1rem; }
+    .hero-stats { gap: 1.5rem; }
+    .copy-feedback { bottom: 16px; right: 16px; left: 16px; text-align: center; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    html { scroll-behavior: auto; }
+  }
+
+  ::selection { background: rgba(77, 122, 148, 0.25); color: #0C151C; }
+</style>
+</head>
+<body>
+
+<div id="copyToast" class="copy-feedback" role="status" aria-live="polite">
+  <i class="fas fa-check-circle" style="margin-right: 8px;"></i> copied
+</div>
+
+<div class="container">
+
+  <div class="header-row">
+    <a href="/" class="brand" data-track="logo">
+      CoreByte
+      <span class="brand-small">free tools · by Core Byte Solutions</span>
+    </a>
+    <nav class="header-nav" aria-label="Main navigation">
+      <a href="#tools" data-track="nav-tools">Tools</a>
+      <a href="#about" data-track="nav-about">About</a>
+      <a href="https://corebytesolutions.site" data-track="nav-services" target="_blank" rel="noopener">Services</a>
+    </nav>
+  </div>
+
+  <section class="hero">
+    <div class="badge">free · no signup · nothing uploaded</div>
+    <h1>Free online tools that run in your browser.</h1>
+    <p class="subhead">
+      Fast, private, browser-based utilities for developers and creators.
+      Everything runs on your device — nothing is sent to a server.
+    </p>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="hero-stat-num">4</span><span class="hero-stat-label">tools</span></div>
+      <div class="hero-stat"><span class="hero-stat-num">0</span><span class="hero-stat-label">uploads</span></div>
+      <div class="hero-stat"><span class="hero-stat-num">100%</span><span class="hero-stat-label">client-side</span></div>
+    </div>
+  </section>
+
+  <div class="tabs" id="tools" role="tablist">
+    <button class="tab-btn active" data-tab="json" data-track="tab-json" role="tab" aria-selected="true"><i class="fas fa-code"></i> JSON Formatter</button>
+    <button class="tab-btn" data-tab="base64" data-track="tab-base64" role="tab" aria-selected="false"><i class="fas fa-key"></i> Base64</button>
+    <button class="tab-btn" data-tab="word" data-track="tab-word" role="tab" aria-selected="false"><i class="fas fa-file-word"></i> Word Counter</button>
+    <button class="tab-btn" data-tab="compress" data-track="tab-compress" role="tab" aria-selected="false"><i class="fas fa-image"></i> Image Compressor</button>
+  </div>
+
+  <!-- ============ JSON FORMATTER ============ -->
+  <section class="tab-panel active" id="panel-json" role="tabpanel" data-keyword="json formatter">
+    <div class="tool-card">
+      <h1>JSON Formatter</h1>
+      <p class="intro">Format, validate, and beautify JSON instantly. Nothing is sent to a server.</p>
+
+      <div class="toolbar">
+        <button class="btn btn-primary" id="json-format" data-track="json-format"><i class="fas fa-wand-magic-sparkles"></i> Format</button>
+        <button class="btn btn-outline" id="json-minify" data-track="json-minify">Minify</button>
+        <button class="btn btn-outline" id="json-validate" data-track="json-validate">Validate</button>
+        <button class="btn btn-outline" id="json-copy" data-track="json-copy"><i class="fas fa-copy"></i> Copy</button>
+        <button class="btn btn-outline" id="json-clear" data-track="json-clear">Clear</button>
+        <button class="btn btn-outline" id="json-sample" data-track="json-sample">Sample</button>
+      </div>
+
+      <div class="error-msg" id="json-error" role="alert"></div>
+
+      <div class="panes">
+        <div class="pane">
+          <div class="pane-header"><span>Input</span><span class="status" id="json-input-status">—</span></div>
+          <textarea id="json-input" spellcheck="false" placeholder='Paste your JSON here...' aria-label="JSON input"></textarea>
+        </div>
+        <div class="pane">
+          <div class="pane-header"><span>Output</span><span class="status" id="json-output-status">—</span></div>
+          <textarea id="json-output" spellcheck="false" readonly placeholder="Formatted JSON appears here..." aria-label="JSON output"></textarea>
+        </div>
+      </div>
+
+      <div class="stats">
+        <span>Input: <strong id="json-stat-in">0</strong> chars</span>
+        <span>Output: <strong id="json-stat-out">0</strong> chars</span>
+        <span>Size change: <strong id="json-stat-diff">0%</strong></span>
+        <span>Lines: <strong id="json-stat-lines">0</strong></span>
+      </div>
+
+      <article>
+        <h2>What is a JSON formatter?</h2>
+        <p>A JSON formatter takes raw or minified JSON and rewrites it with proper indentation so it's easier to read. It also validates the JSON, telling you if there's a syntax error and where it is.</p>
+
+        <h2>How to use it</h2>
+        <ol>
+          <li>Paste your JSON into the Input box.</li>
+          <li>Click Format to beautify it.</li>
+          <li>Click Minify to strip all whitespace.</li>
+          <li>Click Copy to copy the result.</li>
+        </ol>
+
+        <h2>Privacy</h2>
+        <p>This tool runs entirely in your browser using <code>JSON.parse()</code> and <code>JSON.stringify()</code>. Nothing you paste is sent to a server.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ BASE64 ============ -->
+  <section class="tab-panel" id="panel-base64" role="tabpanel" data-keyword="base64 encoder">
+    <div class="tool-card">
+      <h1>Base64 Encoder &amp; Decoder</h1>
+      <p class="intro">Encode text to Base64 or decode Base64 back to text. Runs entirely in your browser.</p>
+
+      <div class="toolbar">
+        <button class="btn btn-primary" id="b64-encode" data-track="b64-encode"><i class="fas fa-lock"></i> Encode</button>
+        <button class="btn btn-outline" id="b64-decode" data-track="b64-decode"><i class="fas fa-lock-open"></i> Decode</button>
+        <button class="btn btn-outline" id="b64-copy" data-track="b64-copy"><i class="fas fa-copy"></i> Copy</button>
+        <button class="btn btn-outline" id="b64-clear" data-track="b64-clear">Clear</button>
+        <button class="btn btn-outline" id="b64-sample" data-track="b64-sample">Sample</button>
+      </div>
+
+      <div class="error-msg" id="b64-error" role="alert"></div>
+
+      <div class="panes">
+        <div class="pane">
+          <div class="pane-header"><span>Input</span><span class="status" id="b64-input-status">—</span></div>
+          <textarea id="b64-input" spellcheck="false" placeholder="Type or paste text here..." aria-label="Base64 input"></textarea>
+        </div>
+        <div class="pane">
+          <div class="pane-header"><span>Output</span><span class="status" id="b64-output-status">—</span></div>
+          <textarea id="b64-output" spellcheck="false" readonly placeholder="Result appears here..." aria-label="Base64 output"></textarea>
+        </div>
+      </div>
+
+      <div class="stats">
+        <span>Input: <strong id="b64-stat-in">0</strong> chars</span>
+        <span>Output: <strong id="b64-stat-out">0</strong> chars</span>
+      </div>
+
+      <article>
+        <h2>What is Base64?</h2>
+        <p>Base64 is a way of encoding binary data as text using 64 characters (A–Z, a–z, 0–9, +, /). It's commonly used to embed images in HTML, transmit data in JSON, and encode credentials in HTTP headers.</p>
+
+        <h2>How to use it</h2>
+        <ol>
+          <li>Type or paste text into the Input box.</li>
+          <li>Click Encode to convert text to Base64.</li>
+          <li>Or paste Base64 and click Decode.</li>
+          <li>Click Copy to copy the result.</li>
+        </ol>
+
+        <h2>Privacy</h2>
+        <p>This tool uses JavaScript's built-in <code>btoa()</code> and <code>atob()</code>. Nothing is sent to a server.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ WORD COUNTER ============ -->
+  <section class="tab-panel" id="panel-word" role="tabpanel" data-keyword="word counter">
+    <div class="tool-card">
+      <h1>Word Counter</h1>
+      <p class="intro">Count words, characters, sentences, paragraphs, and reading time as you type.</p>
+
+      <div class="toolbar">
+        <button class="btn btn-outline" id="wc-copy" data-track="wc-copy"><i class="fas fa-copy"></i> Copy text</button>
+        <button class="btn btn-outline" id="wc-clear" data-track="wc-clear">Clear</button>
+        <button class="btn btn-outline" id="wc-sample" data-track="wc-sample">Sample</button>
+      </div>
+
+      <div class="metric-grid">
+        <div class="metric"><div class="metric-value" id="wc-words">0</div><div class="metric-label">Words</div></div>
+        <div class="metric"><div class="metric-value" id="wc-chars">0</div><div class="metric-label">Characters</div></div>
+        <div class="metric"><div class="metric-value" id="wc-chars-nospace">0</div><div class="metric-label">No Spaces</div></div>
+        <div class="metric"><div class="metric-value" id="wc-sentences">0</div><div class="metric-label">Sentences</div></div>
+        <div class="metric"><div class="metric-value" id="wc-paragraphs">0</div><div class="metric-label">Paragraphs</div></div>
+        <div class="metric"><div class="metric-value" id="wc-reading">0m</div><div class="metric-label">Reading Time</div></div>
+      </div>
+
+      <div class="pane">
+        <div class="pane-header"><span>Your text</span><span class="status" id="wc-status">—</span></div>
+        <textarea id="wc-input" spellcheck="false" placeholder="Start typing or paste your text here..." style="min-height: 280px;" aria-label="Text to count"></textarea>
+      </div>
+
+      <article>
+        <h2>What is a word counter?</h2>
+        <p>A word counter counts the number of words, characters, sentences, and paragraphs in your text. Useful for writers, students, and anyone with word limits.</p>
+
+        <h2>How to use it</h2>
+        <ol>
+          <li>Type or paste your text into the box.</li>
+          <li>Counts update live as you type.</li>
+          <li>Reading time is estimated at 200 words per minute.</li>
+        </ol>
+
+        <h2>Privacy</h2>
+        <p>This tool runs entirely in your browser. Nothing you type is sent to a server.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ IMAGE COMPRESSOR ============ -->
+  <section class="tab-panel" id="panel-compress" role="tabpanel" data-keyword="image compressor">
+    <div class="tool-card">
+      <h1>Image Compressor</h1>
+      <p class="intro">Compress JPG and PNG images in your browser. <strong>Your files never leave your device.</strong></p>
+
+      <label class="drop-zone" id="dropZone" data-track="compress-dropzone">
+        <input type="file" id="fileInput" accept="image/*" multiple aria-label="Choose images to compress">
+        <div class="icon"><i class="fas fa-cloud-arrow-up"></i></div>
+        <h3>Click to choose images, or drag &amp; drop them here</h3>
+        <p>Supports JPG, PNG, WebP — multiple files at once</p>
+      </label>
+
+      <div class="controls">
+        <label for="quality">Quality: <span class="value" id="qualityValue">75%</span></label>
+        <input type="range" id="quality" min="10" max="100" value="75" aria-label="Compression quality">
+        <button class="btn btn-primary" id="compressBtn" disabled data-track="compress-run"><i class="fas fa-compress"></i> Compress</button>
+        <button class="btn btn-outline" id="clearBtn" disabled data-track="compress-clear">Clear</button>
+      </div>
+
+      <div class="summary" id="summary" style="display:none;"></div>
+      <div class="results" id="results"></div>
+
+      <article>
+        <h2>What is an image compressor?</h2>
+        <p>An image compressor reduces the file size of an image while keeping it visually similar. Smaller images load faster and are easier to share.</p>
+
+        <h2>How to use it</h2>
+        <ol>
+          <li>Click the drop zone or drag your images into it.</li>
+          <li>Adjust the quality slider.</li>
+          <li>Click Compress.</li>
+          <li>Download each compressed image.</li>
+        </ol>
+
+        <h2>Privacy</h2>
+        <p>This tool uses the HTML5 Canvas API to re-encode your images entirely inside your browser. <strong>Your files are never uploaded anywhere.</strong></p>
+      </article>
+    </div>
+  </section>
+
+</div>
+
+<footer id="about" class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-name">CoreByte</div>
+        <div class="footer-studio">free tools · by Core Byte Solutions</div>
+        <p style="color: #2C5770; font-size: 0.9rem; margin-bottom: 1rem;">
+          Free, private, browser-based tools for developers and creators. Nothing is uploaded. Everything runs on your device.
+        </p>
+        <p style="color: #52758B; font-size: 0.83rem;">
+          <i class="fas fa-shield-alt"></i> 100% client-side · no signup · nothing stored
+        </p>
+      </div>
+      <div>
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="#tools" data-track="footer-json" onclick="switchTab('json'); return false;">JSON Formatter</a></li>
+          <li><a href="#tools" data-track="footer-base64" onclick="switchTab('base64'); return false;">Base64 Encoder</a></li>
+          <li><a href="#tools" data-track="footer-word" onclick="switchTab('word'); return false;">Word Counter</a></li>
+          <li><a href="#tools" data-track="footer-compress" onclick="switchTab('compress'); return false;">Image Compressor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://corebytesolutions.site" target="_blank" rel="noopener" data-track="footer-services">Services site</a></li>
+          <li><a href="mailto:info@corebytesolutions.site" data-track="footer-email">info@corebytesolutions.site</a></li>
+          <li><a href="https://wa.me/27724728166" target="_blank" rel="noopener" data-track="footer-wa">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 CoreByte — a Core Byte Solutions project</span>
+      <span>Free forever · nothing uploaded</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  // ============ GA4 ============
+  function track(action, label, value) {
+    if (typeof gtag === 'function') {
+      gtag('event', action, {
+        event_category: 'tools',
+        event_label: label || '',
+        value: value || 1
+      });
+    }
+  }
+
+  document.querySelectorAll('[data-track]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      track('click', el.dataset.track);
+    });
+  });
+
+  var firedScroll = {};
+  window.addEventListener('scroll', function () {
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (docHeight <= 0) return;
+    var pct = Math.round((scrollTop / docHeight) * 100);
+    [25, 50, 75, 100].forEach(function (t) {
+      if (pct >= t && !firedScroll[t]) {
+        firedScroll[t] = true;
+        track('scroll_depth', t + '%', t);
+      }
+    });
+  }, { passive: true });
+
+  [30, 60, 180].forEach(function (s) {
+    setTimeout(function () { track('time_on_page', s + 's', s); }, s * 1000);
+  });
+
+  // ============ TOAST ============
+  var toast = document.getElementById('copyToast');
+  var toastTimer;
+  function showToast(text) {
+    if (!toast) return;
+    toast.innerHTML = '<i class="fas fa-check-circle" style="margin-right: 8px;"></i> ' + text;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toast.classList.remove('show'); }, 2200);
+  }
+
+  // ============ TABS ============
+  var tabButtons = document.querySelectorAll('.tab-btn');
+  var panels = document.querySelectorAll('.tab-panel');
+
+  function switchTab(target) {
+    tabButtons.forEach(function (b) {
+      var on = b.dataset.tab === target;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    panels.forEach(function (p) {
+      p.classList.toggle('active', p.id === 'panel-' + target);
+    });
+  }
+  window.switchTab = switchTab;
+
+  tabButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      switchTab(btn.dataset.tab);
+    });
+  });
+
+  // ============ HELPERS ============
+  function setStatus(el, state, text) {
+    el.classList.remove('ok', 'err');
+    if (state === 'ok') el.classList.add('ok');
+    if (state === 'err') el.classList.add('err');
+    el.textContent = text;
+  }
+  function showError(box, msg) { box.textContent = msg; box.classList.add('show'); }
+  function clearError(box) { box.textContent = ''; box.classList.remove('show'); }
+  function copyText(text, label) {
+    if (window.navigator && navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () {
+        showToast(label || 'copied');
+      }).catch(function () {
+        fallbackCopy(text, label);
+      });
+    } else {
+      fallbackCopy(text, label);
+    }
+  }
+  function fallbackCopy(text, label) {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); showToast(label || 'copied'); } catch (e) {}
+    document.body.removeChild(ta);
+  }
+
+  // ============ JSON FORMATTER ============
+  var jInput = document.getElementById('json-input');
+  var jOutput = document.getElementById('json-output');
+  var jError = document.getElementById('json-error');
+  var jInStatus = document.getElementById('json-input-status');
+  var jOutStatus = document.getElementById('json-output-status');
+  var jStatIn = document.getElementById('json-stat-in');
+  var jStatOut = document.getElementById('json-stat-out');
+  var jStatDiff = document.getElementById('json-stat-diff');
+  var jStatLines = document.getElementById('json-stat-lines');
+
+  var JSON_SAMPLE = {
+    name: "CoreByte",
+    version: "1.0.0",
+    tools: [
+      { name: "JSON Formatter", category: "dev", free: true },
+      { name: "Base64 Encoder", category: "dev", free: true },
+      { name: "Word Counter", category: "text", free: true },
+      { name: "Image Compressor", category: "image", free: true }
+    ],
+    meta: {
+      author: "CoreByte",
+      url: "https://corebyte.site",
+      tags: ["tools", "developer", "free"]
+    }
+  };
+
+  function jsonUpdateStats() {
+    var inLen = jInput.value.length;
+    var outLen = jOutput.value.length;
+    jStatIn.textContent = inLen.toLocaleString();
+    jStatOut.textContent = outLen.toLocaleString();
+    if (inLen === 0) { jStatDiff.textContent = '0%'; }
+    else {
+      var diff = ((outLen - inLen) / inLen) * 100;
+      jStatDiff.textContent = (diff >= 0 ? '+' : '') + diff.toFixed(1) + '%';
+    }
+    jStatLines.textContent = jOutput.value ? jOutput.value.split('\n').length.toLocaleString() : '0';
+  }
+
+  function jsonParse() {
+    var raw = jInput.value.trim();
+    if (!raw) { showError(jError, 'Input is empty.'); setStatus(jInStatus, 'err', 'empty'); return null; }
+    try {
+      var parsed = JSON.parse(raw);
+      setStatus(jInStatus, 'ok', 'valid');
+      clearError(jError);
+      return parsed;
+    } catch (e) {
+      showError(jError, 'Invalid JSON: ' + e.message);
+      setStatus(jInStatus, 'err', 'invalid');
+      return null;
+    }
+  }
+
+  document.getElementById('json-format').addEventListener('click', function () {
+    var parsed = jsonParse();
+    if (parsed === null) { jOutput.value = ''; setStatus(jOutStatus, '', '—'); }
+    else { jOutput.value = JSON.stringify(parsed, null, 2); setStatus(jOutStatus, 'ok', 'formatted'); track('json_format_success'); }
+    jsonUpdateStats();
+  });
+
+  document.getElementById('json-minify').addEventListener('click', function () {
+    var parsed = jsonParse();
+    if (parsed === null) { jOutput.value = ''; setStatus(jOutStatus, '', '—'); }
+    else { jOutput.value = JSON.stringify(parsed); setStatus(jOutStatus, 'ok', 'minified'); track('json_minify_success'); }
+    jsonUpdateStats();
+  });
+
+  document.getElementById('json-validate').addEventListener('click', function () {
+    var parsed = jsonParse();
+    if (parsed === null) { jOutput.value = ''; setStatus(jOutStatus, '', '—'); }
+    else {
+      var type = Array.isArray(parsed) ? 'array' : typeof parsed;
+      jOutput.value = '✓ Valid JSON\n\nTop-level type: ' + type;
+      setStatus(jOutStatus, 'ok', 'valid');
+      track('json_validate_success');
+    }
+    jsonUpdateStats();
+  });
+
+  document.getElementById('json-copy').addEventListener('click', function () {
+    if (!jOutput.value) return;
+    copyText(jOutput.value, 'JSON copied');
+    track('json_copy');
+  });
+
+  document.getElementById('json-clear').addEventListener('click', function () {
+    jInput.value = ''; jOutput.value = '';
+    clearError(jError);
+    setStatus(jInStatus, '', '—'); setStatus(jOutStatus, '', '—');
+    jsonUpdateStats(); jInput.focus();
+  });
+
+  document.getElementById('json-sample').addEventListener('click', function () {
+    jInput.value = JSON.stringify(JSON_SAMPLE);
+    clearError(jError); setStatus(jInStatus, 'ok', 'valid'); jsonUpdateStats();
+  });
+
+  jInput.addEventListener('paste', function () {
+    setTimeout(function () {
+      var parsed = jsonParse();
+      if (parsed !== null) {
+        jOutput.value = JSON.stringify(parsed, null, 2);
+        setStatus(jOutStatus, 'ok', 'formatted');
+        jsonUpdateStats();
+        track('json_paste_autofix');
+      }
+    }, 50);
+  });
+
+  jInput.addEventListener('input', function () {
+    if (!jInput.value.trim()) { setStatus(jInStatus, '', '—'); clearError(jError); }
+    jsonUpdateStats();
+  });
+
+  jInput.addEventListener('keydown', function (e) {
+    if (e.key === 'Tab') {
+      e.preventDefault();
+      var start = this.selectionStart;
+      var end = this.selectionEnd;
+      this.value = this.value.substring(0, start) + '  ' + this.value.substring(end);
+      this.selectionStart = this.selectionEnd = start + 2;
+    }
+  });
+
+  // ============ BASE64 ============
+  var bInput = document.getElementById('b64-input');
+  var bOutput = document.getElementById('b64-output');
+  var bError = document.getElementById('b64-error');
+  var bInStatus = document.getElementById('b64-input-status');
+  var bOutStatus = document.getElementById('b64-output-status');
+  var bStatIn = document.getElementById('b64-stat-in');
+  var bStatOut = document.getElementById('b64-stat-out');
+
+  function b64UpdateStats() {
+    bStatIn.textContent = bInput.value.length.toLocaleString();
+    bStatOut.textContent = bOutput.value.length.toLocaleString();
+  }
+
+  document.getElementById('b64-encode').addEventListener('click', function () {
+    clearError(bError);
+    var text = bInput.value;
+    if (!text) {
+      showError(bError, 'Input is empty.'); setStatus(bInStatus, 'err', 'empty');
+      bOutput.value = ''; setStatus(bOutStatus, '', '—'); b64UpdateStats(); return;
+    }
+    try {
+      bOutput.value = btoa(unescape(encodeURIComponent(text)));
+      setStatus(bInStatus, 'ok', 'ready'); setStatus(bOutStatus, 'ok', 'encoded');
+      track('base64_encode_success');
+    } catch (e) {
+      showError(bError, 'Encoding failed: ' + e.message); setStatus(bOutStatus, 'err', 'error');
+    }
+    b64UpdateStats();
+  });
+
+  document.getElementById('b64-decode').addEventListener('click', function () {
+    clearError(bError);
+    var text = bInput.value.trim();
+    if (!text) {
+      showError(bError, 'Input is empty.'); setStatus(bInStatus, 'err', 'empty');
+      bOutput.value = ''; setStatus(bOutStatus, '', '—'); b64UpdateStats(); return;
+    }
+    try {
+      bOutput.value = decodeURIComponent(escape(atob(text)));
+      setStatus(bInStatus, 'ok', 'ready'); setStatus(bOutStatus, 'ok', 'decoded');
+      track('base64_decode_success');
+    } catch (e) {
+      showError(bError, 'Invalid Base64: ' + e.message);
+      setStatus(bInStatus, 'err', 'invalid');
+      bOutput.value = ''; setStatus(bOutStatus, '', '—');
+    }
+    b64UpdateStats();
+  });
+
+  document.getElementById('b64-copy').addEventListener('click', function () {
+    if (!bOutput.value) return;
+    copyText(bOutput.value, 'Base64 copied');
+    track('base64_copy');
+  });
+
+  document.getElementById('b64-clear').addEventListener('click', function () {
+    bInput.value = ''; bOutput.value = '';
+    clearError(bError);
+    setStatus(bInStatus, '', '—'); setStatus(bOutStatus, '', '—');
+    b64UpdateStats(); bInput.focus();
+  });
+
+  document.getElementById('b64-sample').addEventListener('click', function () {
+    bInput.value = 'Hello from CoreByte!';
+    clearError(bError); setStatus(bInStatus, 'ok', 'ready'); b64UpdateStats();
+  });
+
+  bInput.addEventListener('input', b64UpdateStats);
+
+  // ============ WORD COUNTER ============
+  var wInput = document.getElementById('wc-input');
+  var wStatus = document.getElementById('wc-status');
+  var wWords = document.getElementById('wc-words');
+  var wChars = document.getElementById('wc-chars');
+  var wCharsNS = document.getElementById('wc-chars-nospace');
+  var wSentences = document.getElementById('wc-sentences');
+  var wParagraphs = document.getElementById('wc-paragraphs');
+  var wReading = document.getElementById('wc-reading');
+
+  var WC_SAMPLE = "CoreByte is a collection of free online tools. It includes a JSON formatter, a Base64 encoder, a word counter, and an image compressor.\n\nEverything runs in your browser. Nothing is sent to a server. That makes it fast and private.\n\nTry it yourself. Paste your text and watch the counts update live.";
+
+  function wcUpdate() {
+    var text = wInput.value;
+    var words = text.trim() ? text.trim().split(/\s+/).length : 0;
+    var chars = text.length;
+    var charsNS = text.replace(/\s/g, '').length;
+    var sentences = text.trim() ? (text.match(/[^.!?]+[.!?]+/g) || []).length : 0;
+    if (text.trim() && sentences === 0) sentences = 1;
+    var paragraphs = text.trim()
+      ? text.trim().split(/\n\s*\n/).filter(function (p) { return p.trim().length > 0; }).length
+      : 0;
+    var minutes = Math.ceil(words / 200);
+    var reading = minutes > 0 ? minutes + 'm' : '0m';
+
+    wWords.textContent = words.toLocaleString();
+    wChars.textContent = chars.toLocaleString();
+    wCharsNS.textContent = charsNS.toLocaleString();
+    wSentences.textContent = sentences.toLocaleString();
+    wParagraphs.textContent = paragraphs.toLocaleString();
+    wReading.textContent = reading;
+
+    if (words === 0) setStatus(wStatus, '', '—');
+    else setStatus(wStatus, 'ok', words + ' words');
+  }
+
+  document.getElementById('wc-copy').addEventListener('click', function () {
+    if (!wInput.value) return;
+    copyText(wInput.value, 'text copied');
+    track('word_counter_copy');
+  });
+
+  document.getElementById('wc-clear').addEventListener('click', function () {
+    wInput.value = ''; wcUpdate(); wInput.focus();
+  });
+
+  document.getElementById('wc-sample').addEventListener('click', function () {
+    wInput.value = WC_SAMPLE; wcUpdate();
+  });
+
+  wInput.addEventListener('input', wcUpdate);
+
+  // ============ IMAGE COMPRESSOR ============
+  var dropZone = document.getElementById('dropZone');
+  var fileInput = document.getElementById('fileInput');
+  var quality = document.getElementById('quality');
+  var qualityValue = document.getElementById('qualityValue');
+  var compressBtn = document.getElementById('compressBtn');
+  var clearBtn = document.getElementById('clearBtn');
+  var results = document.getElementById('results');
+  var summary = document.getElementById('summary');
+
+  var files = [];
+  var resultsData = [];
+
+  quality.addEventListener('input', function () {
+    qualityValue.textContent = quality.value + '%';
+  });
+
+  ['dragenter', 'dragover'].forEach(function (ev) {
+    dropZone.addEventListener(ev, function (e) { e.preventDefault(); dropZone.classList.add('dragover'); });
+  });
+  ['dragleave', 'drop'].forEach(function (ev) {
+    dropZone.addEventListener(ev, function (e) { e.preventDefault(); dropZone.classList.remove('dragover'); });
+  });
+  dropZone.addEventListener('drop', function (e) {
+    var dropped = Array.from(e.dataTransfer.files).filter(function (f) { return f.type.startsWith('image/'); });
+    addFiles(dropped);
+    track('compress_drop', 'files:' + dropped.length, dropped.length);
+  });
+
+  fileInput.addEventListener('change', function (e) {
+    var picked = Array.from(e.target.files);
+    addFiles(picked);
+    track('compress_select', 'files:' + picked.length, picked.length);
+    fileInput.value = '';
+  });
+
+  function addFiles(newFiles) {
+    files = files.concat(newFiles.filter(function (f) { return f.type.startsWith('image/'); }));
+    updateButtons();
+  }
+
+  function updateButtons() {
+    compressBtn.disabled = files.length === 0;
+    clearBtn.disabled = files.length === 0 && resultsData.length === 0;
+  }
+
+  function formatBytes(bytes) {
+    if (bytes < 1024) return bytes + ' B';
+    if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
+    return (bytes / (1024 * 1024)).toFixed(2) + ' MB';
+  }
+
+  function compressImage(file, qualityPct) {
+    return new Promise(function (resolve, reject) {
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        var img = new Image();
+        img.onload = function () {
+          var canvas = document.createElement('canvas');
+          canvas.width = img.width; canvas.height = img.height;
+          var ctx = canvas.getContext('2d');
+          ctx.drawImage(img, 0, 0);
+          var outType = file.type === 'image/png' ? 'image/png' : 'image/jpeg';
+          canvas.toBlob(function (blob) {
+            if (!blob) { reject(new Error('Compression failed')); return; }
+            resolve({ blob: blob, width: img.width, height: img.height, type: outType });
+          }, outType, qualityPct / 100);
+        };
+        img.onerror = function () { reject(new Error('Could not load image')); };
+        img.src = e.target.result;
+      };
+      reader.onerror = function () { reject(new Error('Could not read file')); };
+      reader.readAsDataURL(file);
+    });
+  }
+
+  compressBtn.addEventListener('click', async function () {
+    if (files.length === 0) return;
+
+    compressBtn.disabled = true;
+    compressBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Compressing...';
+
+    resultsData.forEach(function (r) {
+      URL.revokeObjectURL(r.compressedUrl);
+      URL.revokeObjectURL(r.originalUrl);
+    });
+    resultsData = [];
+    results.innerHTML = '';
+    summary.style.display = 'none';
+
+    var totalOriginal = 0;
+    var totalCompressed = 0;
+
+    for (var i = 0; i < files.length; i++) {
+      var file = files[i];
+      try {
+        var result = await compressImage(file, parseInt(quality.value, 10));
+        var originalUrl = URL.createObjectURL(file);
+        var compressedUrl = URL.createObjectURL(result.blob);
+
+        resultsData.push({
+          name: file.name,
+          originalSize: file.size,
+          compressedSize: result.blob.size,
+          compressedUrl: compressedUrl,
+          originalUrl: originalUrl,
+          width: result.width,
+          height: result.height,
+          type: result.type
+        });
+
+        totalOriginal += file.size;
+        totalCompressed += result.blob.size;
+        renderResult(resultsData[resultsData.length - 1]);
+      } catch (err) {
+        var errorCard = document.createElement('div');
+        errorCard.className = 'result-card';
+        errorCard.innerHTML = '<div></div><div class="result-info"><h4>' +
+          escapeHtml(file.name) + '</h4><p style="color:#A02020">Error: ' +
+          escapeHtml(err.message) + '</p></div><div></div>';
+        results.appendChild(errorCard);
+      }
+    }
+
+    if (totalOriginal > 0) {
+      var saved = totalOriginal - totalCompressed;
+      var pct = ((saved / totalOriginal) * 100).toFixed(1);
+      summary.innerHTML = '<strong>Saved ' + formatBytes(saved) + ' (' + pct + '%)</strong> — ' +
+        formatBytes(totalOriginal) + ' → ' + formatBytes(totalCompressed) +
+        ' across ' + resultsData.length + ' image' + (resultsData.length > 1 ? 's' : '') + '.';
+      summary.style.display = 'block';
+      track('compress_success', 'images:' + resultsData.length + ',saved:' + pct + '%', resultsData.length);
+    }
+
+    compressBtn.disabled = false;
+    compressBtn.innerHTML = '<i class="fas fa-compress"></i> Compress';
+    files = [];
+    updateButtons();
+  });
+
+  function renderResult(r) {
+    var card = document.createElement('div');
+    card.className = 'result-card';
+    var savings = r.originalSize - r.compressedSize;
+    var pct = ((savings / r.originalSize) * 100).toFixed(1);
+    var ext = r.type === 'image/png' ? '.png' : '.jpg';
+    var baseName = r.name.replace(/\.[^.]+$/, '');
+    var downloadName = baseName + '-compressed' + ext;
+
+    card.innerHTML =
+      '<img src="' + r.compressedUrl + '" alt="" loading="lazy">' +
+      '<div class="result-info">' +
+        '<h4>' + escapeHtml(r.name) + '</h4>' +
+        '<div class="meta">' + r.width + '×' + r.height + ' · ' +
+          formatBytes(r.originalSize) + ' → ' + formatBytes(r.compressedSize) + '</div>' +
+        '<div class="savings">Saved ' + formatBytes(savings) + ' (' + pct + '%)</div>' +
+      '</div>' +
+      '<div class="actions">' +
+        '<a href="' + r.compressedUrl + '" download="' + escapeHtml(downloadName) + '" class="btn btn-primary" data-track="compress-download"><i class="fas fa-download"></i> Download</a>' +
+      '</div>';
+    results.appendChild(card);
+  }
+
+  function escapeHtml(str) {
+    return String(str).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  clearBtn.addEventListener('click', function () {
+    files = [];
+    resultsData.forEach(function (r) {
+      URL.revokeObjectURL(r.compressedUrl);
+      URL.revokeObjectURL(r.originalUrl);
+    });
+    resultsData = [];
+    results.innerHTML = '';
+    summary.style.display = 'none';
+    updateButtons();
+  });
+
+  updateButtons();
+
+  // ============ INITIAL STATE ============
+  jInput.value = JSON.stringify(JSON_SAMPLE);
+  document.getElementById('json-format').click();
+
+  window.addEventListener('beforeunload', function () {
+    resultsData.forEach(function (r) {
+      try { URL.revokeObjectURL(r.compressedUrl); } catch (e) {}
+      try { URL.revokeObjectURL(r.originalUrl); } catch (e) {}
+    });
+  });
+
+})();
+</script>
+
 </body>
 </html>
